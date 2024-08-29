@@ -24,6 +24,9 @@ jobs:
           cache: "npm"
       - run: npm ci
 
+      - name: Authenticate Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
       # Lint and format code
       - name: Run ESLint
         run: npx eslint . --max-warnings=0
