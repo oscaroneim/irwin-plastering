@@ -13,7 +13,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v4
@@ -27,10 +26,12 @@ jobs:
       - name: Install Snyk CLI
         run: npm install -g snyk
 
+      - name: Authenticate Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
       - name: Verify Snyk installation
         run: snyk --version
 
-      # Lint and format code
       - name: Run ESLint
         run: npx eslint . --max-warnings=0
 
@@ -43,16 +44,22 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Run Snyk test
+        run: snyk test
+
   snyk:
     runs-on: ubuntu-latest
     needs: build
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
     steps:
       - uses: actions/checkout@v4
 
       - name: Use Node.js for Snyk
         uses: actions/setup-node@v4
         with:
-          node-version: "18" # Or any other version you need
+          node-version: ${{ matrix.node-version }}
           cache: "npm"
 
       - run: npm ci
