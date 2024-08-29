@@ -1,0 +1,3 @@
+npm run lint
+snyk test
+snyk code test
