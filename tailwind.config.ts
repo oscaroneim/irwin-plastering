@@ -33,6 +33,9 @@ const config = {
         lightblue: "#419FE1",
         darkblue: "#0C337F",
       },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
