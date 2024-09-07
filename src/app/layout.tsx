@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fontSans.className}>
+      <body className={`${fontSans.className} flex flex-col min-h-screen`}>
         <NavBar />
         <Wrapper>{children}</Wrapper>
         <Footer />

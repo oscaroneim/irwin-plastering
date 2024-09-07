@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer className="w-full h-auto bg-darkblue text-white font-bold">
       <section className="py-8">
-        <FooterLogo className="w-[188px] h-[80px] ml-1 mx-auto" />
+        <FooterLogo className="w-[188px] h-[80px] ml-1 lg:ml-2 mx-auto" />
 
-        <div className=" gap-8 flex flex-col md:flex-row md:justify-between mx-4">
+        <div className="gap-8 flex flex-col md:flex-row md:justify-between mx-12">
           <div className="mb-6 lg:mb-0">
             <h3 className="text-lightblue font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
