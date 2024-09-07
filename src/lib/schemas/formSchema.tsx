@@ -18,7 +18,7 @@ import { Input } from "../../components/Ui/input";
 import { useToast } from "../../components/Ui/use-toast"; //optional
 import { Textarea } from "../../components/Ui/textarea";
 
-const FormSchema = z.object({
+export const FormSchema = z.object({
   firstName: z.string().min(2, {
     message: "First ame must be at least 2 characters long.",
   }),

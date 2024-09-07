@@ -58,3 +58,5 @@ const FormSchema = z.object({
     )
     .min(1, { message: "Select at least one service." }),
 });
+
+export default FormSchema;
