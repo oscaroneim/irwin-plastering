@@ -32,6 +32,7 @@ const config = {
         orange: "#E18341",
         lightblue: "#419FE1",
         darkblue: "#0C337F",
+        logoblue: "#2E3383",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
