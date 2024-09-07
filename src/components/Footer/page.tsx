@@ -9,10 +9,10 @@ export default function Footer() {
   return (
     <footer className="w-full h-auto bg-darkblue text-white font-bold">
       <section className="py-8">
-        <FooterLogo className="w-[188px] h-[80px] mb-6 ml-1" />
-        <div className="lg:grid lg:grid-cols-3 gap-8 flex flex-col mx-6">
+        <FooterLogo className="w-[188px] h-[80px] ml-1 mx-auto" />
+
+        <div className=" gap-8 flex flex-col md:flex-row md:justify-between mx-4">
           <div className="mb-6 lg:mb-0">
-            {" "}
             <h3 className="text-lightblue font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
               <Link href="">
@@ -34,14 +34,13 @@ export default function Footer() {
           </div>
 
           <div className="mb-6 lg:mb-0">
-            {" "}
             <h3 className="text-lightblue font-bold mb-4">Working hours</h3>
             <div className="space-y-2">
               <p>Mon : 8:00am - 5:00pm</p>
-              <p>Mon : 8:00am - 5:00pm</p>
-              <p>Mon : 8:00am - 5:00pm</p>
-              <p>Mon : 8:00am - 5:00pm</p>
-              <p>Mon : 8:00am - 5:00pm</p>
+              <p>Tues : 8:00am - 5:00pm</p>
+              <p>Wed : 8:00am - 5:00pm</p>
+              <p>Thurs : 8:00am - 5:00pm</p>
+              <p>Fri : 8:00am - 5:00pm</p>
             </div>
           </div>
 

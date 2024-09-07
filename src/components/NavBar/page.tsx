@@ -8,11 +8,10 @@ export default function NavBar() {
   return (
     <nav className="flex items-center justify-between">
       <div className="w-1/2 h-auto">
-        {/* Mobile Logo - Hidden on md and larger screens */}
         <Link href="/">
           <Logo className="w-[188px] h-[80px] pt-2 md:hidden" />
         </Link>
-        {/* Desktop Logo - Hidden on mobile screens */}
+
         <Link href="/">
           <Logo2 className="w-full h-auto hidden md:block pt-2" />
         </Link>
