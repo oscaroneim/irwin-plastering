@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/Navbar/page";
+import Wrapper from "../components/Wrapper";
 
 const fontSans = FontSans({
   weight: ["400", "700"],
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={fontSans.className}>
         <NavBar />
-        {children}
+        <Wrapper>{children}</Wrapper>
       </body>
     </html>
   );
