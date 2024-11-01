@@ -5,8 +5,9 @@ import NavBar from "../components/NavBar/page";
 import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer/page";
 import { Toaster } from "../components/Ui/toaster";
+import { Montserrat } from "next/font/google";
 
-const fontSans = FontSans({
+const fontSans = Montserrat({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
@@ -26,11 +27,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fontSans.className} flex flex-col min-h-screen`}>
         <NavBar />
-        <Wrapper>
+        <Wrapper className="flex-grow">
           <Toaster />
           {children}
         </Wrapper>
-        <Footer />
+        <Footer className="w-full" />
       </body>
     </html>
   );

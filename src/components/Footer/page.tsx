@@ -5,7 +5,7 @@ import Whatsapp from "/public/images/svg/🦆 icon _whatsapp_.svg";
 import Insta from "/public/images/svg/🦆 icon _instagram_.svg";
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({ className }: { className?: string }) {
   return (
     <footer className="w-full h-auto bg-darkblue text-white font-bold">
       <section className="py-8">
