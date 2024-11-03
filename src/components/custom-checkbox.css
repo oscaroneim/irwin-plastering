@@ -1,0 +1,59 @@
+/* globals.css or a CSS module */
+.custom-checkbox {
+  appearance: none;
+  width: 1.25rem; /* Adjust size as needed */
+  height: 1.25rem; /* Adjust size as needed */
+  background-color: #fff; /* Background color */
+  border: 2px solid #419FE1; /* Border color */
+  border-radius: 0.25rem; /* Rounded corners */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked {
+  background-color: #419FE1; /* Checked background color */
+  border-color: #419FE1; /* Checked border color */
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%; /* Adjust position as needed */
+  left: 50%; /* Adjust position as needed */
+  width: 0.75rem; /* Adjust size as needed */
+  height: 0.75rem; /* Adjust size as needed */
+  background-color: #0C337F; /* Checkmark color */
+  border-radius: 0.125rem; /* Rounded corners for checkmark */
+  transform: translate(-50%, -50%);
+}
+
+/* custom-radio.css */
+.custom-radio {
+  appearance: none;
+  width: 1.25rem; /* Adjust size as needed */
+  height: 1.25rem; /* Adjust size as needed */
+  background-color: #fff; /* Background color */
+  border: 2px solid #419FE1; /* Border color */
+  border-radius: 50%; /* Rounded corners for radio button */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio:checked {
+  background-color: #419FE1; /* Checked background color */
+  border-color: #419FE1; /* Checked border color */
+}
+
+.custom-radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%; /* Adjust position as needed */
+  left: 50%; /* Adjust position as needed */
+  width: 0.75rem; /* Adjust size as needed */
+  height: 0.75rem; /* Adjust size as needed */
+  background-color: #0C337F; /* Checkmark color */
+  border-radius: 50%; /* Rounded corners for checkmark */
+  transform: translate(-50%, -50%);
+}

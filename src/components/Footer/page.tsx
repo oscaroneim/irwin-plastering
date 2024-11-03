@@ -7,11 +7,14 @@ import Link from "next/link";
 
 export default function Footer({ className }: { className?: string }) {
   return (
-    <footer className="w-full h-auto bg-darkblue text-white font-bold">
-      <section className="py-8">
-        <FooterLogo className="w-[188px] h-[80px] ml-1 lg:ml-2 mx-auto" />
-
-        <div className="gap-8 flex flex-col md:flex-row md:justify-between mx-12">
+    <footer className="w-full h-auto bg-darkblue text-white font-bold mt-8">
+      <section className="py-8 md:py-2">
+        <div className="flex md:ml-4 ml-2 mb-4 md:mb-0">
+          <Link href="/">
+            <FooterLogo className="w-[188px] h-[80px] md:w-[288px] md:h-[180px] ml-1 mx-auto md:mt-0" />
+          </Link>
+        </div>
+        <div className="gap-8 flex flex-col md:flex-row md:justify-evenly mx-12">
           <div className="mb-6 lg:mb-0">
             <h3 className="text-lightblue font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">

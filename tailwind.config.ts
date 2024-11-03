@@ -11,7 +11,7 @@ const config = {
   prefix: "",
   theme: {
     container: {
-      center: "true",
+      center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
@@ -47,6 +47,9 @@ const config = {
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+      },
+      dropShadow: {
+        custom: "0 1.2px 1.2px rgba(0, 0, 0, 0.8)",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

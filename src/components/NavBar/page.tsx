@@ -6,7 +6,7 @@ import Phone from "/public/images/svg/phone.svg";
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="flex items-center justify-between mb-8">
       <div className="w-1/2 h-auto">
         <Link href="/">
           <Logo className="w-[188px] h-[80px] pt-2 md:hidden" />
@@ -20,7 +20,9 @@ export default function NavBar() {
         <Button />
       </div>
       <div className="md:flex text-xl md:items-center md:justify-between font-bold md:gap-4 hidden pr-4">
-        <p className="text-darkblue text-nowrap">Contact Us</p>
+        <p className="text-darkblue text-nowrap">
+          <Link href={"/contact"}>Contact Us</Link>
+        </p>
         <Phone className="w-6 h-6" />
         <p className="text-orange">07746882369</p>
       </div>
