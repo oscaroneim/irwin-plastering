@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Map from "../../public/images/map.png";
-import Button from "../components/Button/page";
+import Link from "next/link";
 
 export default function CallToAction() {
   return (
@@ -11,16 +11,19 @@ export default function CallToAction() {
           alt="Oxfordshire & Buckinghamshire"
           width={300}
           height={200}
-          layout="responsive"
         />
       </div>
-      <h1 className="text-2xl md:text-4xl font-bold z-10 text-darkblue text-center drop-shadow-custom">
+      <h1 className="text-4xl font-bold z-10 text-darkblue text-center drop-shadow-custom">
         OXFORDSHIRE &<span className="block">BUCKINGHAMSHIRE</span>
       </h1>
-      <h2 className="text-orange text-xl md:text-3xl font-bold italic text-center drop-shadow-custom">
-        We've got you<span className="block">covered!</span>
+      <h2 className="text-orange text-3xl font-bold italic text-center drop-shadow-custom">
+        We&apos;ve got you<span className="block">covered!</span>
       </h2>
-      <Button />
+      <Link href="/contact">
+        <button className="w-auto h-auto bg-lightblue text-white font-bold px-8 py-4 rounded-md drop-shadow-lg">
+          Get a quote
+        </button>
+      </Link>
     </div>
   );
 }

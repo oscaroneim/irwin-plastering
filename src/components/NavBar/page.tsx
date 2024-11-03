@@ -20,7 +20,7 @@ export default function NavBar() {
         <Button />
       </div>
       <div className="md:flex text-xl md:items-center md:justify-between font-bold md:gap-4 hidden pr-4">
-        <p className="text-darkblue text-nowrap">
+        <p className="text-white text-nowrap md:h-auto md:w-auto md:bg-lightblue md:py-1 md:px-2 md:rounded-md">
           <Link href={"/contact"}>Contact Us</Link>
         </p>
         <Phone className="w-6 h-6" />
