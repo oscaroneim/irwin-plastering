@@ -19,7 +19,7 @@ const ContactPage: React.FC = () => {
         </p>
 
         <div className="flex flex-col md:flex-row-reverse mt-14">
-          <div className="lg:w-full lg:flex lg:justify-evenly lg:h-[750px] hidden">
+          <div className="lg:w-full lg:flex lg:justify-evenly hidden">
             <Image
               src="/images/contact.png"
               alt="Commercial plastering img"

@@ -1,3 +1,4 @@
+import Services from "@/components/BuildingTypes/page";
 import Carousel from "../components/Carousel";
 
 export default function Home() {
@@ -7,7 +8,9 @@ export default function Home() {
         <Carousel />
       </section>
       <section>
-        <div className="h-[600px] w-full bg-darkblue mt-8"></div>
+        <div className="w-full mt-8">
+          <Services />
+        </div>
       </section>
       <section>
         <div className="h-[600px] w-full bg-lightblue mt-8"></div>

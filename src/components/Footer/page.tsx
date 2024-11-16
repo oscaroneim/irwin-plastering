@@ -4,15 +4,17 @@ import Email from "/public/images/svg/🦆 icon _email_.svg";
 import Whatsapp from "/public/images/svg/🦆 icon _whatsapp_.svg";
 import Insta from "/public/images/svg/🦆 icon _instagram_.svg";
 import Link from "next/link";
+import "./page.css";
 
 export default function Footer({ className }: { className?: string }) {
   return (
     <footer className="w-full h-auto bg-darkblue text-white font-bold mt-8">
-      <section className="py-8 md:py-2">
-        <div className="flex md:ml-4 ml-2 mb-4 md:mb-0">
+      <section className="py-8 md:py-2 relative">
+        <div className="flex md:ml-4 ml-2 mb-4 md:mb-0 relative w-full">
           <Link href="/">
             <FooterLogo className="w-[188px] h-[80px] md:w-[288px] md:h-[180px] ml-1 mx-auto md:mt-0" />
           </Link>
+          <div className="border-top-custom absolute top-[60px] md:top-[120.5px] mx-auto w-[78%] md:w-[90%] md:left-24"></div>
         </div>
         <div className="gap-8 flex flex-col md:flex-row md:justify-evenly mx-12">
           <div className="mb-6 lg:mb-0">

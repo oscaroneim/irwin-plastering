@@ -1,0 +1,10 @@
+.border-top-custom-head {
+  border-top: 2px solid darkblue;
+}
+
+@media (max-width: 640px) {
+  .border-top-custom-head {
+    border-top: 1.5px solid darkblue;
+    left: 55px;
+  }
+}

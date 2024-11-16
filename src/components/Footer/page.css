@@ -1,0 +1,10 @@
+.border-top-custom {
+  border-top: 2px solid white;
+}
+
+@media (max-width: 640px) {
+  .border-top-custom {
+    border-top: 1.5px solid white;
+    left: 55px;
+  }
+}
