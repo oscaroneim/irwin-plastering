@@ -123,7 +123,7 @@ const ContactForm: React.FC = () => {
       <form
         ref={formRef} // Required by EmailJS
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-[90%] space-y-6 "
+        className="md:w-[90%] space-y-6 w-full"
       >
         <FormField
           control={form.control}
@@ -135,7 +135,7 @@ const ContactForm: React.FC = () => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-primary border-2 bg-white"
+                  className="border-slate-400 border-2 bg-white"
                   placeholder="Your First Name"
                   {...field}
                 />
@@ -155,7 +155,7 @@ const ContactForm: React.FC = () => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-primary border-2 bg-white"
+                  className="border-slate-400 border-2 bg-white"
                   placeholder="Your Second Name"
                   {...field}
                 />
@@ -175,7 +175,7 @@ const ContactForm: React.FC = () => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-primary border-2 bg-white"
+                  className="border-slate-400 border-2 bg-white"
                   placeholder="Your Phone Number"
                   {...field}
                 />
@@ -195,7 +195,7 @@ const ContactForm: React.FC = () => {
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-primary bg-white border-2"
+                  className="border-slate-400 bg-white border-2"
                   placeholder="Your Email Address"
                   {...field}
                 />
@@ -204,60 +204,60 @@ const ContactForm: React.FC = () => {
             </FormItem>
           )}
         />
+        <div className="grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0">
+          <FormField
+            control={form.control}
+            name="typeOfLocation"
+            render={() => (
+              <FormItem>
+                <FormLabel className="text-lg font-bold text-orange">
+                  Type of Property
+                </FormLabel>
+                <FormControl>
+                  <div className="flex flex-col gap-2 text-darkblue">
+                    {["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"].map(
+                      (service) => (
+                        <label
+                          key={service}
+                          className="flex items-center space-x-2"
+                        >
+                          <input
+                            type="radio"
+                            className="custom-radio mr-2"
+                            value={service}
+                            {...form.register("typeOfLocation")}
+                          />
+                          <span>{service}</span>
+                        </label>
+                      ),
+                    )}
+                  </div>
+                </FormControl>
+                <FormMessage className="text-xs text-red-600" />
+              </FormItem>
+            )}
+          />
 
-        <FormField
-          control={form.control}
-          name="typeOfLocation"
-          render={() => (
-            <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                Type of Property
-              </FormLabel>
-              <FormControl>
-                <div className="flex flex-col text-lightblue">
-                  {["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"].map(
-                    (service) => (
-                      <label
-                        key={service}
-                        className="flex items-center space-x-2"
-                      >
-                        <input
-                          type="radio"
-                          className="custom-radio mr-2"
-                          value={service}
-                          {...form.register("typeOfLocation")}
-                        />
-                        <span>{service}</span>
-                      </label>
-                    ),
-                  )}
-                </div>
-              </FormControl>
-              <FormMessage className="text-xs text-red-600" />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="postcode"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                Postcode
-              </FormLabel>
-              <FormControl>
-                <Input
-                  className="border-primary bg-white border-2"
-                  placeholder="Your Postcode"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage className="text-xs text-red-600" />
-            </FormItem>
-          )}
-        />
-
+          <FormField
+            control={form.control}
+            name="postcode"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-lg font-bold text-orange">
+                  Postcode
+                </FormLabel>
+                <FormControl>
+                  <Input
+                    className="border-slate-400 bg-white border-2"
+                    placeholder="Your Postcode"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage className="text-xs text-red-600" />
+              </FormItem>
+            )}
+          />
+        </div>
         <FormField
           control={form.control}
           name="services"
@@ -267,7 +267,7 @@ const ContactForm: React.FC = () => {
                 Services
               </FormLabel>
               <FormControl>
-                <div className="flex flex-col text-lightblue">
+                <div className="grid grid-cols-1 md:grid-cols-2 text-darkblue ">
                   {[
                     "PLASTERING",
                     "LIQUID SCREED",
@@ -303,7 +303,7 @@ const ContactForm: React.FC = () => {
               </FormLabel>
               <FormControl>
                 <Textarea
-                  className="border-primary border-2 bg-white h-32"
+                  className="border-slate-400 border-2 bg-white h-32"
                   placeholder="Give us more details here."
                   {...field}
                 />
@@ -315,7 +315,7 @@ const ContactForm: React.FC = () => {
 
         <Button
           type="submit"
-          className="text-md text-white bg-lightblue hover:bg-darkblue w-full h-[88px]"
+          className="text-md text-white bg-orange hover:bg-orange hover:bg-opacity-40 w-full h-20 font-bold text-2xl p-2"
         >
           Send
         </Button>
