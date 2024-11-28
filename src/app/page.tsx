@@ -1,14 +1,16 @@
+"use client";
+
 import Services from "@/components/BuildingTypes/page";
-import Carousel from "../components/Carousel";
+import { EmblaCarousel } from "@/components/Carousel/EmblaCarousel";
 
 export default function Home() {
   return (
     <main>
-      <section className="mb-8">
-        <Carousel />
+      <section>
+        <EmblaCarousel />
       </section>
       <section>
-        <div className="w-full mt-8">
+        <div>
           <Services />
         </div>
       </section>
