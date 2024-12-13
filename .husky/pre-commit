@@ -1,5 +1,4 @@
 # npm install
-# npm run lint
 # npx prettier --write .
 # npx prettier --check .
 # snyk test
