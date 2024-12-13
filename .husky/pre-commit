@@ -1,5 +1,5 @@
-# yarn install
-# npx prettier --write .
-# npx prettier --check .
-# snyk test
-# snyk code test
+yarn install
+npx prettier --write .
+npx prettier --check .
+snyk test
+snyk code test
