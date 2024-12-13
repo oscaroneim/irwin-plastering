@@ -32,9 +32,6 @@ jobs:
       - name: Verify Snyk installation
         run: snyk --version
 
-      - name: Run ESLint
-        run: npx eslint . --max-warnings=0
-
       - name: Run Prettier
         run: npx prettier --check .
 

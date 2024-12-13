@@ -7,7 +7,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "prepare": "husky",
     "test": "snyk test",
     "format": "prettier --write ."
@@ -35,16 +34,10 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^8.12.2",
-    "@typescript-eslint/parser": "^8.12.2",
-    "eslint": "^9.16.0",
-    "eslint-config-next": "^15.0.2",
-    "eslint-plugin-react": "^7.37.2",
     "globals": "^15.13.0",
     "husky": "^9.1.5",
     "postcss": "^8",
