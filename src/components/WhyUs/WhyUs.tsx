@@ -23,9 +23,9 @@ export default function WhyChooseUs() {
             <p className="text-lg text-gray-700 leading-relaxed">
               With extensive experience in floor screeding and spray rendering,
               we excel in complex and demanding site environments. Our
-              collaborative approach, combined with the industry's best tools
-              and trusted materials, ensures the successful completion of your
-              projects on time and to the highest standard.
+              collaborative approach, combined with the industry`&apos;`s best
+              tools and trusted materials, ensures the successful completion of
+              your projects on time and to the highest standard.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               We partner with leading main contractors, independent specialist

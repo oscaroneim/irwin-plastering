@@ -4,8 +4,6 @@ import Image from "next/image";
 import Certified from "../../components/Certified/page";
 
 const ContactPage: React.FC = () => {
-  const isMobile = false;
-
   return (
     <>
       <div className="text-center md:mt-2">
