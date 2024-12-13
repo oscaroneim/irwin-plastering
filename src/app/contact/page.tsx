@@ -1,13 +1,14 @@
 import React from "react";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
+import Certified from "../../components/Certified/page";
 
 const ContactPage: React.FC = () => {
   const isMobile = false;
 
   return (
     <>
-      <div className="text-center md:mt-16">
+      <div className="text-center md:mt-2">
         <h1 className="md:text-6xl font-bold text-darkblue border-b-4 w-[60%] md:border-b-8 border-orange text-4xl md:w-[645px] mx-auto m-auto">
           CONTACT THE TEAM
         </h1>
@@ -30,6 +31,9 @@ const ContactPage: React.FC = () => {
           <div className="w-full flex justify-center p-0">
             <ContactForm />
           </div>
+        </div>
+        <div>
+          <Certified />
         </div>
       </div>
     </>

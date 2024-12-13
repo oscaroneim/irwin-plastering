@@ -1,8 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Map from "../../../public/images/map.png";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function HeroBanner() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // Prevents rendering on the server side
+  }
   return (
     <div className="absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center text-center space-y-4">
       <div>
@@ -21,7 +33,7 @@ export default function HeroBanner() {
         We&apos;ve got you<span className="block">covered!</span>
       </h2>
       <Link href="/contact">
-        <button className="w-auto h-auto bg-lightblue text-white font-bold px-6 py-4 rounded-md drop-shadow-lg">
+        <button className="w-auto h-auto bg-lightblue text-white font-bold px-6 py-4 rounded-md drop-shadow-lg hover:bg-darkblue">
           Get a quote
         </button>
       </Link>

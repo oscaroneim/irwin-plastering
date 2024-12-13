@@ -2,11 +2,12 @@
 
 import Services from "@/components/BuildingTypes/page";
 import { EmblaCarousel } from "@/components/Carousel/EmblaCarousel";
+import WhyChooseUs from "@/components/WhyUs/WhyUs";
 
 export default function Home() {
   return (
     <main>
-      <section>
+      <section className="mx-[18px]">
         <EmblaCarousel />
       </section>
       <section>
@@ -15,7 +16,9 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="h-[600px] w-full bg-lightblue mt-8"></div>
+        <div>
+          <WhyChooseUs />
+        </div>
       </section>
     </main>
   );

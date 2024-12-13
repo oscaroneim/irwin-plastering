@@ -76,7 +76,6 @@ export default function Footer({ className }: { className?: string }) {
           </div>
         </div>
       </section>
-
       <p className="mt-8 text-center text-[10px]">
         IRWIN PLASTERING LTD &copy; 2024 | ALL RIGHTS RESERVED
       </p>
