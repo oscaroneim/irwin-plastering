@@ -12,20 +12,39 @@ export default function Certified() {
         Approved Installers and Trusted Partners of Leading Screed Brands
       </h1>
       <div className="flex justify-center items-center gap-6">
-        <Image src={sponserLogo4} alt="Gypsol logo" width={150} height={100} />
-        <Image
-          src={sponserLogo1}
-          alt="Cemfloor logo"
-          width={150}
-          height={100}
-        />
-        <Image
-          src={sponserLogo2}
-          alt="Longfloor logo"
-          width={150}
-          height={100}
-        />
-        <Image src={sponserLogo3} alt="Gyvlon logo" width={150} height={100} />
+        <div className="p-2">
+          <Image
+            src={sponserLogo4}
+            alt="Gypsol logo"
+            width={150}
+            height={100}
+          />
+        </div>
+        <div className="p-2">
+          <Image
+            src={sponserLogo1}
+            alt="Cemfloor logo"
+            width={150}
+            height={100}
+          />
+        </div>
+
+        <div className="p-2">
+          <Image
+            src={sponserLogo2}
+            alt="Longfloor logo"
+            width={150}
+            height={100}
+          />
+        </div>
+        <div className="p-2">
+          <Image
+            src={sponserLogo3}
+            alt="Gyvlon logo"
+            width={150}
+            height={100}
+          />
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import Services from "@/components/BuildingTypes/page";
 import { EmblaCarousel } from "@/components/Carousel/EmblaCarousel";
-import WhyChooseUs from "@/components/WhyUs/WhyUs";
+import WhyUs from "@/components/WhyUs/WhyUs";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       </section>
       <section>
         <div>
-          <WhyChooseUs />
+          <WhyUs />
         </div>
       </section>
     </main>

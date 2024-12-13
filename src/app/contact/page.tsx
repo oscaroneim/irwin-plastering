@@ -9,9 +9,10 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <div className="text-center md:mt-2">
-        <h1 className="md:text-6xl font-bold text-darkblue border-b-4 w-[60%] md:border-b-8 border-orange text-4xl md:w-[645px] mx-auto m-auto">
+        <h1 className="md:text-6xl font-bold text-darkblue text-4xl">
           CONTACT THE TEAM
         </h1>
+        <div className="border-b-4 w-[82%] md:w-[645px] md:border-b-8 border-orange mx-auto m-auto"></div>
       </div>
       <div className="container mx-auto p-4 mt-10">
         <p className="mb-4 text-lightblue font-bold font-montserrat text-2xl md:text-3xl lg:text-4xl text-left lg:w-full md:mx-8">

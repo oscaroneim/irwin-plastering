@@ -10,20 +10,22 @@ import JobDone from "../../../public/images/service4.png";
 
 export default function Services() {
   return (
-    <section className="w-full h-auto mt-20 px-4">
-      <h1 className="mb-8 text-darkblue font-semibold text-5xl text-center md:text-left">
+    <section className="w-full h-auto mt-12 px-4">
+      <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl text-center md:text-left">
         OUR SERVICES ENCOMPASS
       </h1>
-      <div className="border-b-4 lg:border-b-8 border-orange w-full mb-8"></div>
-      <div className="flex flex-col md:flex-row justify-between items-stretch w-auto">
-        <div className="mb-8 md:mb-0 flex flex-col w-[452px]">
-          <h2 className="mb-4 font-semibold text-2xl">COMMERCIAL SITES</h2>
+      <div className="border-b-4 md:border-b-8 border-orange md:w-[80%] lg:w-[50%] mb-8"></div>
+      <div className="flex flex-col md:flex-row md:gap-4 justify-between items-stretch w-auto">
+        <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
+          <h2 className="mb-4 font-semibold text-2xl">
+            COMMERCIAL <span className="hidden lg:inline-block">SITES</span>
+          </h2>
           <Image
             src={Comm}
             alt="Commercial Sites"
             width={452}
             height={208}
-            className="mb-4 rounded-md"
+            className="mb-4 rounded-md object-cover w-full"
           />
           <p className="mb-4 flex-grow">
             Irwin Plastering provides durable screeding solutions ideal for
@@ -34,14 +36,14 @@ export default function Services() {
           <Button type="commercial" />
         </div>
 
-        <div className="mb-8 md:mb-0 flex flex-col w-[452px]">
+        <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
           <h2 className="mb-4 font-semibold text-2xl">PRIVATE HOUSE</h2>
           <Image
             src={Private}
             alt="Private House"
             width={452}
             height={208}
-            className="mb-4 rounded-md"
+            className="mb-4 rounded-md object-cover w-full"
           />
           <p className="mb-4 flex-grow">
             Transforming private homes with flawless plastering and screeding,
@@ -52,14 +54,14 @@ export default function Services() {
           <Button type="private" />
         </div>
 
-        <div className="flex flex-col w-[452px]">
+        <div className="flex flex-col w-full md:w-[452px]">
           <h2 className="mb-4 font-semibold text-2xl">HOME OWNER</h2>
           <Image
             src={Home}
             alt="Home Owner"
             width={452}
             height={208}
-            className="mb-4 rounded-md"
+            className="mb-4 rounded-md object-cover w-full"
           />
           <p className="mb-4 flex-grow">
             For homeowners, we provide high-quality plastering and screeding to
@@ -70,9 +72,9 @@ export default function Services() {
         </div>
       </div>
       <div className="border-4 border-orange mt-8 rounded-md p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
           <div className="flex flex-col px-4 self-center lg:ml-2">
-            <h2 className="mb-4 font-semibold text-5xl text-lightblue">
+            <h2 className="mb-4 font-semibold text-4xl lg:text-5xl text-lightblue">
               At Irwin, we handle all aspects of plastering
             </h2>
             <p className="mb-4 text-xl mt-2">
@@ -88,7 +90,7 @@ export default function Services() {
               giving you results that stand the test of time.
             </p>
 
-            <ul className="text-3xl space-y-2 lg:mt-2">
+            <ul className="text-3xl space-y-2 lg:mt-2 grid grid-cols-2 lg:grid-cols-1 gap-x-4">
               <li className="text-darkblue font-semibold italic">
                 • Plastering
               </li>
@@ -105,8 +107,8 @@ export default function Services() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 lg:mr-2 gap-4">
-            <div className="w-full h-[150px] md:w-[350px] md:h-[350px] rounded-md overflow-hidden p-1 md:p-2">
+          <div className="grid grid-cols-2 gap-2 md:gap-4">
+            <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
               <Image
                 src={Pour}
                 alt="Pouring screed"
@@ -115,7 +117,7 @@ export default function Services() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="w-full h-[150px] md:w-[350px] md:h-[350px] rounded-md overflow-hidden p-1 md:p-2">
+            <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
               <Image
                 src={Smooth}
                 alt="Smoothing over a wall"
@@ -124,7 +126,7 @@ export default function Services() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="w-full h-[150px] md:w-[350px] md:h-[350px] rounded-md overflow-hidden p-1 md:p-2">
+            <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
               <Image
                 src={Machines}
                 alt="Equipment we use"
@@ -133,7 +135,7 @@ export default function Services() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="w-full h-[150px] md:w-[350px] md:h-[350px] rounded-md overflow-hidden p-1 md:p-2">
+            <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
               <Image
                 src={JobDone}
                 alt="A finished wall"
