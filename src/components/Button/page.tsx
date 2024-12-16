@@ -4,7 +4,7 @@ import { useSelection } from "@/utils/SelectionContext";
 
 type ButtonProp = {
   className?: string;
-  type: "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY";
+  type: "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY" | "";
 };
 
 const Button = ({ className, type }: ButtonProp) => {
@@ -12,9 +12,8 @@ const Button = ({ className, type }: ButtonProp) => {
   const router = useRouter();
 
   const handleButtonClick = () => {
-    console.log("Setting selected type:", type); // Debug
-    setSelected(type);
-    router.push("/contact"); // Navigate to the contact page
+    setSelected(type || "");
+    router.push("/contact");
   };
 
   return (

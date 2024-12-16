@@ -9,16 +9,15 @@ import Link from "next/link";
 export default function WhyChooseUs() {
   return (
     <section className="w-full h-auto mt-20 px-4">
-      {/* Main Top Section */}
       <div className="flex flex-col md:flex-row items-stretch min-h-[400px] pl-10">
-        {/* Left Section */}
         <div className="md:w-1/2 flex flex-col justify-center">
-          {/* Title */}
-          <h1 className="text-darkblue font-semibold text-5xl mb-4">
-            WHY CHOOSE US?
-          </h1>
-          <div className="border-b-4 lg:border-b-8 border-orange w-[65%] mb-8"></div>
-          {/* Text Content */}
+          <div className="text-center">
+            <h1 className="text-darkblue font-semibold text-5xl mb-2 lg:text-left">
+              WHY CHOOSE US?
+            </h1>
+            <div className="h-1 lg:h-2 bg-orange mx-auto w-full max-w-[65%] lg:mx-0 mb-6"></div>
+          </div>
+
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
               With extensive experience in floor screeding and spray rendering,
@@ -44,7 +43,6 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="md:w-1/2 flex items-center">
           <Image
             src={whyUs}
@@ -56,7 +54,6 @@ export default function WhyChooseUs() {
         </div>
       </div>
 
-      {/* Full-Width Image Grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
         <div className="w-full h-36 rounded-md flex items-center justify-center">
           <Link href="https://cemfloor.co.uk/">

@@ -20,11 +20,11 @@ export default function NavBar() {
         <div className="border-top-custom-head absolute top-[60px] md:top-[102px] mx-auto w-[78%] md:w-[92.5%] md:left-24"></div>
       </div>
       <div className="md:hidden pr-2">
-        <Button />
+        <Button type="" />
       </div>
       <div className="md:flex text-xl md:items-center md:justify-between font-bold md:gap-4 hidden pr-4">
         <p className="text-white text-nowrap md:h-auto md:w-auto md:bg-lightblue md:hover:bg-darkblue md:py-1 md:px-2 md:rounded-md">
-          <Link href={"/contact"}>Contact Us</Link>
+          <Link href={"/contact"}>Submit Your Enquiry</Link>
         </p>
         <Phone className="w-5 h-6" />
         <a

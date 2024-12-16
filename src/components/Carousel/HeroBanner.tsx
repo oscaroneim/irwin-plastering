@@ -13,18 +13,16 @@ export default function HeroBanner() {
   }, []);
 
   if (!isMounted) {
-    return null; // Prevents rendering on the server side
+    return null;
   }
   return (
-    <div className="absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center text-center space-y-4">
-      <div>
-        <div className="relative">
-          <Image
-            src={Map}
-            alt="Oxfordshire & Buckinghamshire"
-            layout="responsive"
-          />
-        </div>
+    <div className="absolute left-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center text-center space-y-4">
+      <div className="relative">
+        <Image
+          src={Map}
+          alt="Oxfordshire & Buckinghamshire"
+          layout="object-cover"
+        />
       </div>
       <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold z-10 text-darkblue text-center drop-shadow-custom">
         OXFORDSHIRE &<span className="block">BUCKINGHAMSHIRE</span>

@@ -7,10 +7,12 @@ import Private from "/public/images/priv.png";
 export default function Services() {
   return (
     <section className="w-full h-auto mt-12 px-4">
-      <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl text-center md:text-left">
-        OUR SERVICES ENCOMPASS
-      </h1>
-      <div className="border-b-4 md:border-b-8 border-orange md:w-[80%] lg:w-[50%] mb-8"></div>
+      <div className="text-center">
+        <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl">
+          OUR SERVICES ENCOMPASS
+        </h1>
+        <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full max-w-[80%] lg:max-w-[50%] mb-12"></div>
+      </div>
       <div className="flex flex-col md:flex-row md:gap-4 justify-between items-stretch w-auto">
         <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
           <h2 className="mb-4 font-semibold text-2xl">

@@ -9,8 +9,8 @@ export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
-    <div className="overflow-hidden mb-10" ref={emblaRef}>
-      <div className="flex h-[600px]">
+    <div className="overflow-hidden mb-12" ref={emblaRef}>
+      <div className="flex h-[650px]">
         <div className="flex-none w-full min-w-0">
           <HeroBanner />
           <Image src={Slide1} alt="A man plastering" layout="responsive" />
