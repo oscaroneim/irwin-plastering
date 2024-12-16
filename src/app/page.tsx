@@ -2,6 +2,7 @@
 
 import Services from "@/components/BuildingTypes/page";
 import { EmblaCarousel } from "@/components/Carousel/EmblaCarousel";
+import Expertise from "@/components/Expertise/page";
 import WhyUs from "@/components/WhyUs/WhyUs";
 
 export default function Home() {
@@ -10,15 +11,14 @@ export default function Home() {
       <section className="mx-[18px]">
         <EmblaCarousel />
       </section>
-      <section>
-        <div>
-          <Services />
-        </div>
+      <section id="services">
+        <Services />
       </section>
-      <section>
-        <div>
-          <WhyUs />
-        </div>
+      <section id="expertise">
+        <Expertise />
+      </section>
+      <section id="whyUs">
+        <WhyUs />
       </section>
     </main>
   );

@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        id="top"
         className={`${fontSans.className} flex flex-col min-h-screen overflow-x-hidden`}
       >
         <NavBar />
