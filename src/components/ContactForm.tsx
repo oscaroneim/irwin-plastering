@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { Button } from "./Ui/button";
@@ -19,6 +19,7 @@ import { Input } from "./Ui/input";
 import { useToast } from "./Ui/use-toast";
 import { Textarea } from "./Ui/textarea";
 import { useRouter } from "next/navigation";
+import { useSelection } from "@/utils/SelectionContext";
 
 const ukPostcodeRegex =
   /^(GIR\s?0AA|(?:(?:[A-PR-UWYZ][0-9]{1,2})|(?:[A-PR-UWYZ][A-HK-Y][0-9]{1,2})|(?:[A-PR-UWYZ][0-9][A-HJKPSTUW])|(?:[A-PR-UWYZ][A-HK-Y][0-9][ABEHMNPRV-Y]))\s?\d[ABD-HJLNP-UW-Z]{2})$/i;
@@ -72,6 +73,7 @@ const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const { toast } = useToast();
   const router = useRouter();
+  const { selected } = useSelection();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -86,6 +88,22 @@ const ContactForm: React.FC = () => {
       services: [],
     },
   });
+
+  const { reset } = form;
+  useEffect(() => {
+    const validTypes: Array<
+      "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY"
+    > = ["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"];
+    if (validTypes.includes(selected as any)) {
+      reset({
+        ...form.getValues(),
+        typeOfLocation: selected as
+          | "HOME OWNER"
+          | "PRIVATE HOUSE"
+          | "COMMERCIAL PROPERTY",
+      });
+    }
+  }, [selected, reset]);
 
   const onSubmit = async (data: z.infer<typeof FormSchema>) => {
     if (formRef.current) {

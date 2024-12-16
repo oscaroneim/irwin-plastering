@@ -83,22 +83,32 @@ export default function Footer({ className }: { className?: string }) {
           </div>
 
           <div className="flex flex-col space-y-4">
-            <div className="flex items-center space-x-2">
-              <Whatsapp />
-              <div className="flex flex-col">
-                <h2 className="text-lightblue font-bold">Whatsapp</h2>
-                <p>07746882369</p>
+            <a
+              href="https://wa.me/447746882369?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20a%20quote%20for%20your%20services.%20My%20project%20involves%20%5Bbrief%20description%5D.%20Could%20you%20let%20me%20know%20the%20next%20steps%3F%20Thanks%21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="flex items-center space-x-2">
+                <Whatsapp />
+                <div className="flex flex-col">
+                  <h2 className="text-lightblue font-bold">Whatsapp</h2>
+                  <p>07746882369</p>
+                </div>
               </div>
-            </div>
-
-            <div className="flex items-center space-x-2">
-              <Email />
-              <div className="flex flex-col">
-                <h2 className="text-lightblue font-bold">Email us</h2>
-                <p>irwinplastering@gmail.com</p>
+            </a>
+            <a
+              href="mailto:irwinplastering@gmail.com?subject=Inquiry%20About%20Your%20Services&body=Hi%20there%20%2C%0A%0AI%E2%80%99d%20like%20to%20learn%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F%0A%0AThanks%2C%0A%5BYour%20Name%5D"
+              className="block"
+            >
+              <div className="flex items-center space-x-2">
+                <Email />
+                <div className="flex flex-col">
+                  <h2 className="text-lightblue font-bold">Email us</h2>
+                  <p>irwinplastering@gmail.com</p>
+                </div>
               </div>
-            </div>
-
+            </a>
             <div className="flex items-center space-x-2">
               <Insta />
               <div className="flex flex-col">
