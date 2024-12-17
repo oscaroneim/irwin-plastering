@@ -31,7 +31,7 @@ export default function Services() {
             smooth, long-lasting floors for high-traffic areas and seamless
             interiors with professional plastering finishes.
           </p>
-          <Button type="COMMERCIAL PROPERTY" />
+          <Button type="COMMERCIAL PROPERTY">BOOK</Button>
         </div>
 
         <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
@@ -49,7 +49,7 @@ export default function Services() {
             Plastering brings precision and care to every home improvement or
             new build project.
           </p>
-          <Button type="PRIVATE HOUSE" />
+          <Button type="PRIVATE HOUSE">BOOK</Button>
         </div>
 
         <div className="flex flex-col w-full md:w-[452px]">
@@ -66,7 +66,7 @@ export default function Services() {
             enhance comfort and aesthetics. Our tailored services deliver
             stylish walls, durable floors, and finishes designed to last.
           </p>
-          <Button type="HOME OWNER" />
+          <Button type="HOME OWNER">BOOK</Button>
         </div>
       </div>
     </section>

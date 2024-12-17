@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import "./page.css";
 
-export default function Footer({ className }: { className?: string }) {
+export default function Footer() {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -20,12 +20,14 @@ export default function Footer({ className }: { className?: string }) {
     e.preventDefault();
 
     if (pathname === "/") {
+      // Scroll to section on the same page
       const element = document.querySelector(hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      router.push(`/#${hash.replace("#", "")}`);
+      // Navigate to homepage and include the hash
+      router.push(`/${hash}`);
     }
   };
 
@@ -42,7 +44,6 @@ export default function Footer({ className }: { className?: string }) {
           <div className="mb-6 lg:mb-0">
             <h3 className="text-lightblue font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
-              {/* Smooth scrolling for sections */}
               <li>
                 <a
                   href="#services"
@@ -64,7 +65,6 @@ export default function Footer({ className }: { className?: string }) {
                   Why Us
                 </a>
               </li>
-              {/* Contact page link */}
               <li>
                 <Link href="/contact">Contact Us</Link>
               </li>
@@ -84,7 +84,7 @@ export default function Footer({ className }: { className?: string }) {
 
           <div className="flex flex-col space-y-4">
             <a
-              href="https://wa.me/447746882369?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20a%20quote%20for%20your%20services.%20My%20project%20involves%20%5Bbrief%20description%5D.%20Could%20you%20let%20me%20know%20the%20next%20steps%3F%20Thanks%21"
+              href="https://wa.me/447746882369"
               target="_blank"
               rel="noopener noreferrer"
               className="block"
@@ -97,10 +97,7 @@ export default function Footer({ className }: { className?: string }) {
                 </div>
               </div>
             </a>
-            <a
-              href="mailto:irwinplastering@gmail.com?subject=Inquiry%20About%20Your%20Services&body=Hi%20there%20%2C%0A%0AI%E2%80%99d%20like%20to%20learn%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F%0A%0AThanks%2C%0A%5BYour%20Name%5D"
-              className="block"
-            >
+            <a href="mailto:irwinplastering@gmail.com" className="block">
               <div className="flex items-center space-x-2">
                 <Email />
                 <div className="flex flex-col">

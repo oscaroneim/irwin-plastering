@@ -32,7 +32,7 @@ export default function HeroBanner() {
       </h2>
       <Link href="/contact">
         <button className="w-auto h-auto bg-lightblue text-white font-bold px-6 py-4 rounded-md drop-shadow-lg hover:bg-darkblue">
-          Get a quote
+          Submit an enquiry
         </button>
       </Link>
     </div>

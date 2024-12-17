@@ -5,9 +5,10 @@ import { useSelection } from "@/utils/SelectionContext";
 type ButtonProp = {
   className?: string;
   type: "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY" | "";
+  children: React.ReactNode;
 };
 
-const Button = ({ className, type }: ButtonProp) => {
+const Button = ({ className, type, children }: ButtonProp) => {
   const { setSelected } = useSelection();
   const router = useRouter();
 
@@ -19,7 +20,7 @@ const Button = ({ className, type }: ButtonProp) => {
   return (
     <button
       onClick={(e) => {
-        e.preventDefault(); // Prevent default if needed
+        e.preventDefault();
         handleButtonClick();
       }}
       className={clsx(
@@ -27,7 +28,7 @@ const Button = ({ className, type }: ButtonProp) => {
         className,
       )}
     >
-      Get a quote
+      {children}
     </button>
   );
 };

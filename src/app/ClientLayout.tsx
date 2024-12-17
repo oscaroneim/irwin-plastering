@@ -31,7 +31,7 @@ export default function ClientLayout({
             {children}
           </Wrapper>
         </main>
-        <Footer className="w-full" />
+        <Footer />
       </SelectionProvider>
     </body>
   );
