@@ -25,7 +25,7 @@ export default function Expertise() {
             giving you results that stand the test of time.
           </p>
 
-          <ul className="text-xl space-y-1 sm:space-y-2 mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-1 sm:gap-y-2 gap-x-4">
+          <ul className="text-xl lg:text-3xl space-y-1 sm:space-y-2 md:space-y-1 mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-1 sm:gap-y-2 md:gap-y-1 gap-x-4">
             <li className="text-darkblue font-semibold italic">• Plastering</li>
             <li className="text-darkblue font-semibold italic">• K Rend</li>
             <li className="text-darkblue font-semibold italic">
