@@ -1,6 +1,5 @@
 import Logo from "/public/images/svg/irwin-plastering-logo.svg";
 import Logo2 from "/public/images/svg/logobullet.svg";
-import Button from "../Button/page";
 import Link from "next/link";
 import Phone from "/public/images/svg/phone.svg";
 import HamburgerMenu from "../HamburgerMenu/page";
@@ -31,7 +30,7 @@ export default function NavBar() {
           rel="noopener noreferrer"
           className="block"
         >
-          <p className="text-orange md:text-xl lg:text-2xl">07746882369</p>
+          <p className="text-orange md:text-xl lg:text-2xl mr-4">07746882369</p>
         </a>
       </div>
     </nav>

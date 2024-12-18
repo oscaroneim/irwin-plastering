@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import logo from "/public/images/svg/footerlogo.svg";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,86 +29,97 @@ const HamburgerMenu = () => {
       </button>
 
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center justify-center">
+        <div className="fixed top-0 left-0 w-full h-full z-50 flex flex-col bg-darkblue">
+          <div className="w-full flex ml-[15%] mt-20">
+            <Image
+              src="/images/svg/footerlogo.svg"
+              alt="Irwin logo"
+              width={250}
+              height={200}
+              priority
+            />
+          </div>
           <button
-            className="absolute top-4 right-4 text-2xl text-black"
+            className="absolute top-4 right-4 text-5xl text-white"
             onClick={handleClose}
             aria-label="Close Menu"
           >
             &times;
           </button>
 
-          <ul className="space-y-6 text-xl text-black">
-            <li>
-              {pathname === "/" ? (
-                <a
-                  href="#top"
+          <div className="flex-1 flex mt-10 justify-center">
+            <ul className="space-y-6 text-xl text-white text-center">
+              <li>
+                {pathname === "/" ? (
+                  <a
+                    href="#top"
+                    onClick={handleClose}
+                    className="hover:text-blue-600"
+                  >
+                    Home
+                  </a>
+                ) : (
+                  <Link href="/" onClick={handleClose}>
+                    Home
+                  </Link>
+                )}
+              </li>
+              <li>
+                {pathname === "/" ? (
+                  <a
+                    href="#services"
+                    onClick={handleClose}
+                    className="hover:text-blue-600"
+                  >
+                    Services
+                  </a>
+                ) : (
+                  <Link href="/#services" onClick={handleClose}>
+                    Services
+                  </Link>
+                )}
+              </li>
+              <li>
+                {pathname === "/" ? (
+                  <a
+                    href="#expertise"
+                    onClick={handleClose}
+                    className="hover:text-blue-600"
+                  >
+                    Expertise
+                  </a>
+                ) : (
+                  <Link href="/#expertise" onClick={handleClose}>
+                    Expertise
+                  </Link>
+                )}
+              </li>
+              <li>
+                {pathname === "/" ? (
+                  <a
+                    href="#whyUs"
+                    onClick={handleClose}
+                    className="hover:text-blue-600"
+                  >
+                    About Us
+                  </a>
+                ) : (
+                  <Link href="/#whyUs" onClick={handleClose}>
+                    About Us
+                  </Link>
+                )}
+              </li>
+              <li>
+                <Link
+                  href="/contact"
                   onClick={handleClose}
                   className="hover:text-blue-600"
                 >
-                  Home
-                </a>
-              ) : (
-                <Link href="/" onClick={handleClose}>
-                  Home
+                  Get a Quote
                 </Link>
-              )}
-            </li>
-            <li>
-              {pathname === "/" ? (
-                <a
-                  href="#services"
-                  onClick={handleClose}
-                  className="hover:text-blue-600"
-                >
-                  Services
-                </a>
-              ) : (
-                <Link href="/#services" onClick={handleClose}>
-                  Services
-                </Link>
-              )}
-            </li>
-            <li>
-              {pathname === "/" ? (
-                <a
-                  href="#expertise"
-                  onClick={handleClose}
-                  className="hover:text-blue-600"
-                >
-                  Expertise
-                </a>
-              ) : (
-                <Link href="/#expertise" onClick={handleClose}>
-                  Expertise
-                </Link>
-              )}
-            </li>
-            <li>
-              {pathname === "/" ? (
-                <a
-                  href="#whyUs"
-                  onClick={handleClose}
-                  className="hover:text-blue-600"
-                >
-                  About Us
-                </a>
-              ) : (
-                <Link href="/#whyUs" onClick={handleClose}>
-                  About Us
-                </Link>
-              )}
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                onClick={handleClose}
-                className="hover:text-blue-600"
-              >
-                Get a Quote
-              </Link>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       )}
     </div>
