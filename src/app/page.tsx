@@ -8,7 +8,7 @@ import WhyUs from "@/components/WhyUs/WhyUs";
 export default function Home() {
   return (
     <main>
-      <section className="mx-[18px]">
+      <section>
         <EmblaCarousel />
       </section>
       <section id="services">

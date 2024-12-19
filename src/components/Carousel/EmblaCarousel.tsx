@@ -11,10 +11,9 @@ export function EmblaCarousel() {
 
   return (
     <div className="overflow-hidden mb-12" ref={emblaRef}>
-      <div className="flex h-[650px]">
+      <div className="flex md:h-[400px] lg:h-[650px]">
         <div className="flex-none w-full min-w-0 relative">
           <HeroBanner />
-          {/* Mobile Image */}
           <div className="block md:hidden">
             <Image
               src={Slide1Mobile}
@@ -23,7 +22,6 @@ export function EmblaCarousel() {
               priority
             />
           </div>
-          {/* Desktop Image */}
           <div className="hidden md:block">
             <Image
               src={Slide1}
