@@ -39,7 +39,7 @@ export default function Expertise() {
         </div>
 
         <div className="grid grid-cols-2 gap-2 md:gap-4">
-          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
+          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-sm overflow-hidden">
             <Image
               src={Pour}
               alt="Pouring screed"
@@ -48,7 +48,7 @@ export default function Expertise() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
+          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-sm overflow-hidden">
             <Image
               src={Smooth}
               alt="Smoothing over a wall"
@@ -57,7 +57,7 @@ export default function Expertise() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
+          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-sm overflow-hidden">
             <Image
               src={Machines}
               alt="Equipment we use"
@@ -66,7 +66,7 @@ export default function Expertise() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-md overflow-hidden">
+          <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-sm overflow-hidden">
             <Image
               src={JobDone}
               alt="A finished wall"

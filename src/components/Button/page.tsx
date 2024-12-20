@@ -24,7 +24,7 @@ const Button = ({ className, type, children }: ButtonProp) => {
         handleButtonClick();
       }}
       className={clsx(
-        "bg-lightblue text-white font-bold px-6 py-4 rounded-md hover:bg-darkblue",
+        "bg-lightblue text-white font-bold px-6 py-4 rounded-sm hover:bg-darkblue",
         className,
       )}
     >

@@ -17,12 +17,12 @@ export default function HeroBanner() {
   }
 
   return (
-    <div className="absolute left-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center text-center space-y-4">
+    <div className="absolute left-10 top-80 lg:top-96 transform -translate-y-1/2 flex flex-col items-center text-center space-y-2">
       <div className="relative hidden md:block">
         <Image
           src={Map}
           alt="Oxfordshire & Buckinghamshire"
-          layout="responsive"
+          className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
         />
       </div>
       <div className="flex flex-col h-[50vh] space-y-8">

@@ -10,7 +10,7 @@ const ContactPage: React.FC = () => {
         <h1 className="md:text-6xl font-bold text-darkblue text-4xl">
           CONTACT US
         </h1>
-        <div className="h-2 bg-orange mx-auto mt-2 w-full max-w-[70%] lg:md:max-w-[30%] md:max-w-[55%] mb-12"></div>
+        <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full max-w-[70%] lg:md:max-w-[30%] md:max-w-[55%] mb-12"></div>
       </div>
       <div className="container mx-auto p-4 mt-10">
         <p className="mb-4 text-lightblue font-bold font-montserrat text-2xl md:text-3xl lg:text-4xl text-left lg:w-full md:mx-8">

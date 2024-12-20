@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
             <h1 className="text-darkblue font-semibold text-3xl md:text-5xl mb-3 lg:mb-4">
               WHY CHOOSE US?
             </h1>
-            <div className="h-1 md:h-2 bg-orange mx-auto lg:mx-0 w-3/4 md:w-full max-w-[65%] mb-6"></div>
+            <div className="h-1 md:h-2 bg-orange mx-auto lg:mx-0 w-3/4 md:w-full max-w-[60%] mb-6"></div>
           </div>
 
           <div className="space-y-6">
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
             alt="man buffing floor"
             width={600}
             height={600}
-            className="object-cover w-full"
+            className="object-cover w-full rounded-sm"
           />
         </div>
       </div>

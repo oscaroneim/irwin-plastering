@@ -11,7 +11,7 @@ export default function Services() {
         <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl">
           OUR SERVICES
         </h1>
-        <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full max-w-[80%] lg:max-w-[50%] mb-12"></div>
+        <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full max-w-[90%] lg:max-w-[28%] mb-12"></div>
       </div>
       <div className="flex flex-col md:flex-row md:gap-4 justify-between items-stretch w-auto">
         <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
@@ -23,7 +23,7 @@ export default function Services() {
             alt="Commercial Sites"
             width={452}
             height={208}
-            className="mb-4 rounded-md object-cover w-full"
+            className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
             Irwin Plastering provides durable screeding solutions ideal for
@@ -41,7 +41,7 @@ export default function Services() {
             alt="Private House"
             width={452}
             height={208}
-            className="mb-4 rounded-md object-cover w-full"
+            className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
             Transforming private homes with flawless plastering and screeding,
@@ -59,7 +59,7 @@ export default function Services() {
             alt="Home Owner"
             width={452}
             height={208}
-            className="mb-4 rounded-md object-cover w-full"
+            className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
             For homeowners, we provide high-quality plastering and screeding to

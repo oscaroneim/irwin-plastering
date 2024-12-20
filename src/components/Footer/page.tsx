@@ -106,13 +106,18 @@ export default function Footer() {
                 </div>
               </div>
             </a>
-            <div className="flex items-center space-x-2">
-              <Insta />
-              <div className="flex flex-col">
-                <h2 className="text-lightblue font-bold">Instagram</h2>
-                <p>@irwinplastering</p>
+            <a
+              href="https://www.instagram.com/irwin_plastering?igsh=MXVmZWU2bGdlMTMybg=="
+              className="block"
+            >
+              <div className="flex items-center space-x-2">
+                <Insta />
+                <div className="flex flex-col">
+                  <h2 className="text-lightblue font-bold">Instagram</h2>
+                  <p>@irwinplastering</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>

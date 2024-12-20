@@ -11,38 +11,33 @@ export default function Certified() {
       <h1 className="text-md md:text-xl mb-4">
         Approved Installers and Trusted Partners of Leading Screed Brands
       </h1>
-      <div className="flex justify-center items-center gap-6">
-        <div className="p-2">
+      <div className="grid grid-cols-2 md:flex md:flex-row md:justify-center md:items-center gap-6">
+        <div className="p-4 flex justify-center">
           <Image
             src={sponserLogo4}
             alt="Gypsol logo"
-            width={150}
-            height={100}
+            className="w-full h-auto max-w-[200px] object-contain"
           />
         </div>
-        <div className="p-2">
+        <div className="p-4 flex justify-center">
           <Image
             src={sponserLogo1}
             alt="Cemfloor logo"
-            width={150}
-            height={100}
+            className="w-full h-auto max-w-[200px] object-contain"
           />
         </div>
-
-        <div className="p-2">
+        <div className="p-4 flex justify-center">
           <Image
             src={sponserLogo2}
             alt="Longfloor logo"
-            width={150}
-            height={100}
+            className="w-full h-auto max-w-[200px] object-contain"
           />
         </div>
-        <div className="p-2">
+        <div className="p-4 flex justify-center">
           <Image
             src={sponserLogo3}
             alt="Gyvlon logo"
-            width={150}
-            height={100}
+            className="w-full h-auto max-w-[200px] object-contain"
           />
         </div>
       </div>
