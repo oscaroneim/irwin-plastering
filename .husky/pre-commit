@@ -1,4 +1,4 @@
-yarn install
+npm install
 npx prettier --write .
 npx prettier --check .
 snyk test
