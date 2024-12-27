@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Slide1 from "../../../public/images/hero1.png";
 import Slide1Mobile from "../../../public/images/Slide1Mobile.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import HeroBanner from "./HeroBanner";
 
 export function EmblaCarousel() {

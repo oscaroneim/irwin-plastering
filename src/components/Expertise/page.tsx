@@ -2,7 +2,7 @@ import Laser from "../../../public/images/lazer.jpg";
 import Smooth from "../../../public/images/smooth.jpg";
 import Machines from "../../../public/images/machine.jpg";
 import JobDone from "../../../public/images/screedWall.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Expertise() {
   return (
