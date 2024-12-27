@@ -2,7 +2,8 @@ import Laser from "../../../public/images/lazer.jpg";
 import Smooth from "../../../public/images/smooth.jpg";
 import Machines from "../../../public/images/machine.jpg";
 import JobDone from "../../../public/images/screedWall.jpg";
-import Image from "next/legacy/image";
+import Image from "next/image";
+import Map from "../../../public/images/maps.png";
 
 export default function Expertise() {
   return (
@@ -25,7 +26,7 @@ export default function Expertise() {
             giving you results that stand the test of time.
           </p>
 
-          <ul className="text-xl lg:text-3xl space-y-1 sm:space-y-2 md:space-y-1 mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-1 sm:gap-y-2 md:gap-y-1 gap-x-4">
+          <ul className="text-xl lg:text-2xl mt-2 grid grid-cols-2 gap-x-4 gap-y-2">
             <li className="text-darkblue font-semibold italic">• Plastering</li>
             <li className="text-darkblue font-semibold italic">• K Rend</li>
             <li className="text-darkblue font-semibold italic">
@@ -34,7 +35,19 @@ export default function Expertise() {
             <li className="text-darkblue font-semibold italic">
               • Liquid Screed
             </li>
-            <li className="text-darkblue font-semibold italic">• Renderins</li>
+            <li className="text-darkblue font-semibold italic">• Repairs</li>
+            <li className="text-darkblue font-semibold italic">
+              • Venetian Plaster
+            </li>
+            <li className="text-darkblue font-semibold italic">
+              • Restoration
+            </li>
+            <li className="text-darkblue font-semibold italic">
+              • Fireproofing
+            </li>
+            <li className="text-darkblue font-semibold italic">
+              • Acoustic Plastering
+            </li>
           </ul>
         </div>
 

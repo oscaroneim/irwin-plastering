@@ -1,7 +1,7 @@
 "use client";
 
 import Services from "@/components/BuildingTypes/page";
-import { EmblaCarousel } from "@/components/Carousel/EmblaCarousel";
+import HeroSection from "@/components/Hero/HeroSection";
 import Expertise from "@/components/Expertise/page";
 import WhyUs from "@/components/WhyUs/WhyUs";
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <section>
-        <EmblaCarousel />
+        <HeroSection />
       </section>
       <section id="services">
         <Services />

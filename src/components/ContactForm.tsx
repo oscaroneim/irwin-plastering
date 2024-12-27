@@ -293,6 +293,10 @@ const ContactForm: React.FC = () => {
                     "RENDERING",
                     "COLOURED SCREED",
                     "ONSITE CONSULTATION",
+                    "REPAIRS",
+                    "RESTORATION",
+                    "FIREPROOFING",
+                    "ACOUSTIC PLASTERING",
                   ].map((service) => (
                     <label key={service} className="flex items-center mb-2">
                       <input

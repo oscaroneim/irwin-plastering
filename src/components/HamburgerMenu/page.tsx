@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import logo from "/public/images/svg/footerlogo.svg";
 
 const HamburgerMenu = () => {

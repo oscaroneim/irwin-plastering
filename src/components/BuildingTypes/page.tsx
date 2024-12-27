@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Button from "../Button/page";
 import Comm from "../../../public/images/office.avif";
 import Home from "../../../public/images/home.jpg";

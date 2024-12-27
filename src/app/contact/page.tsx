@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "../../components/ContactForm";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Certified from "../../components/Certified/page";
 
 const ContactPage: React.FC = () => {
