@@ -4,7 +4,6 @@ import Link from "next/link";
 import Phone from "/public/images/svg/phone.svg";
 import HamburgerMenu from "../HamburgerMenu/page";
 import "./page.css";
-// import Hand from "../../../public/images/svg/handLogo.svg"; hand logo to be animated on page load
 
 export default function NavBar() {
   return (

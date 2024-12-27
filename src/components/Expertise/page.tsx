@@ -1,7 +1,7 @@
-import Pour from "../../../public/images/service1.png";
-import Smooth from "../../../public/images/service2.png";
-import Machines from "../../../public/images/service3.png";
-import JobDone from "../../../public/images/service4.png";
+import Laser from "../../../public/images/lazer.jpg";
+import Smooth from "../../../public/images/smooth.jpg";
+import Machines from "../../../public/images/machine.jpg";
+import JobDone from "../../../public/images/screedWall.jpg";
 import Image from "next/image";
 
 export default function Expertise() {
@@ -10,10 +10,10 @@ export default function Expertise() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div className="flex flex-col px-4 self-center lg:ml-2">
           <h2 className="mb-4 font-semibold text-4xl lg:text-5xl text-lightblue">
-            At Irwin, we handle all aspects of plastering
+            At Irwin, we handle all aspects of plastering.
           </h2>
           <p className="mb-4 text-xl mt-2">
-            At Irwin, we understand that every project comes with its own set of
+            We understand that every project comes with its own set of
             challenges, which is why we pride ourselves on delivering tailored
             solutions. From intricate architectural detailing to large-scale
             commercial projects, our skilled team adapts to your requirements,
@@ -41,8 +41,8 @@ export default function Expertise() {
         <div className="grid grid-cols-2 gap-2 md:gap-4">
           <div className="w-full h-[150px] sm:h-[200px] md:h-[350px] rounded-sm overflow-hidden">
             <Image
-              src={Pour}
-              alt="Pouring screed"
+              src={Laser}
+              alt="Laser measuring the floor"
               width={350}
               height={350}
               className="object-cover w-full h-full"

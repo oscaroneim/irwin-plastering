@@ -1,9 +1,9 @@
 import Image from "next/image";
-import whyUs from "../../../public/images/WhyUs/whyus.jpg";
-import sponserLogo1 from "../../../public/images/WhyUs/sponser1.jpg";
-import sponserLogo2 from "../../../public/images/WhyUs/sponser2.jpg";
-import sponserLogo3 from "../../../public/images/WhyUs/sponser3.jpg";
-import sponserLogo4 from "../../../public/images/WhyUs/sponser4.jpg";
+import whyUs from "../../../public/images/pour.jpeg";
+import SponsorLogo1 from "../../../public/images/WhyUs/sponser1.svg";
+import SponsorLogo2 from "../../../public/images/WhyUs/sponser2.jpg";
+import sponsorLogo3 from "../../../public/images/WhyUs/sponser3.png";
+import sponsorLogo4 from "../../../public/images/WhyUs/sponser4.png";
 import Link from "next/link";
 
 export default function WhyChooseUs() {
@@ -12,10 +12,12 @@ export default function WhyChooseUs() {
       <div className="flex flex-col lg:flex-row items-stretch min-h-[400px] px-4 md:px-10">
         <div className="flex flex-col justify-center lg:w-[60%]">
           <div className="text-center lg:text-left">
-            <h1 className="text-darkblue font-semibold text-3xl md:text-5xl mb-3 lg:mb-4">
-              WHY CHOOSE US?
-            </h1>
-            <div className="h-1 md:h-2 bg-orange mx-auto lg:mx-0 w-3/4 md:w-full max-w-[60%] mb-6"></div>
+            <div className="inline-block">
+              <h1 className="text-darkblue font-semibold text-3xl md:text-5xl mb-3 lg:mb-4">
+                WHY CHOOSE US?
+              </h1>
+              <div className="h-1 md:h-2 bg-orange mx-auto lg:mx-0 w-full mb-6"></div>
+            </div>
           </div>
 
           <div className="space-y-6">
@@ -46,10 +48,10 @@ export default function WhyChooseUs() {
         <div className="hidden lg:flex lg:items-center lg:w-[40%] lg:ml-4">
           <Image
             src={whyUs}
-            alt="man buffing floor"
+            alt="man pouring screed"
             width={600}
-            height={600}
-            className="object-cover w-full rounded-sm"
+            height={700}
+            className="object-cover w-full h-full rounded-sm"
           />
         </div>
       </div>
@@ -57,14 +59,14 @@ export default function WhyChooseUs() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 px-2 sm:px-4">
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://cemfloor.co.uk/">
-            <Image src={sponserLogo1} alt="Cemfloor" width={252} height={145} />
+            <SponsorLogo1 className="w-full h-full" />
           </Link>
         </div>
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://www.longfloor.co.uk/">
             <Image
-              src={sponserLogo2}
-              alt="Longfloor, Integrafloor"
+              src={SponsorLogo2}
+              alt="LongFloor screed"
               width={252}
               height={145}
             />
@@ -73,7 +75,7 @@ export default function WhyChooseUs() {
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://www.gyvlon.co.uk/en/">
             <Image
-              src={sponserLogo3}
+              src={sponsorLogo3}
               alt="Gyvlon Screed"
               width={252}
               height={145}
@@ -82,7 +84,7 @@ export default function WhyChooseUs() {
         </div>
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://www.lkabminerals.com/news/lkab-minerals-acquires-francis-flower-2/">
-            <Image src={sponserLogo4} alt="Gypsol" width={252} height={145} />
+            <Image src={sponsorLogo4} alt="Gypsol" width={252} height={145} />
           </Link>
         </div>
       </div>

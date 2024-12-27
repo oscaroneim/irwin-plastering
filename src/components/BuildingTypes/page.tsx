@@ -1,19 +1,21 @@
 import Image from "next/image";
 import Button from "../Button/page";
-import Comm from "/public/images/comm.png";
-import Home from "/public/images/home.png";
-import Private from "/public/images/priv.png";
+import Comm from "../../../public/images/office.avif";
+import Home from "../../../public/images/home.jpg";
+import Private from "../../../public/images/private.jpg";
 
 export default function Services() {
   return (
     <section className="w-full h-auto mt-12 px-4">
       <div className="text-center">
-        <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl">
-          OUR SERVICES
-        </h1>
-        <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full max-w-[90%] lg:max-w-[28%] mb-12"></div>
+        <div className="inline-block relative lg:mb-8">
+          <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl">
+            OUR SERVICES
+          </h1>
+          <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full"></div>
+        </div>
       </div>
-      <div className="flex flex-col md:flex-row md:gap-4 justify-between items-stretch w-auto">
+      <div className="flex flex-col md:flex-row md:gap-4 justify-between xl:justify-evenly items-stretch w-auto">
         <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
           <h2 className="mb-4 font-semibold text-2xl">
             COMMERCIAL <span className="hidden lg:inline-block">SITES</span>
@@ -22,7 +24,7 @@ export default function Services() {
             src={Comm}
             alt="Commercial Sites"
             width={452}
-            height={208}
+            height={200}
             className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
@@ -40,7 +42,7 @@ export default function Services() {
             src={Private}
             alt="Private House"
             width={452}
-            height={208}
+            height={200}
             className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
@@ -58,7 +60,7 @@ export default function Services() {
             src={Home}
             alt="Home Owner"
             width={452}
-            height={208}
+            height={200}
             className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
