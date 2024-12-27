@@ -3,12 +3,11 @@ import Logo2 from "/public/images/svg/logobullet.svg";
 import Link from "next/link";
 import Phone from "/public/images/svg/phone.svg";
 import HamburgerMenu from "../HamburgerMenu/page";
-import Image from "next/image";
 import "./page.css";
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center justify-between mb-2 md:mb-8 sticky top-0 bg-white z-50 md:static">
+    <nav className="flex items-center justify-between mb-2 md:mb-8 top-0 bg-white z-50">
       <div className="w-1/2 h-auto">
         <Link href="/">
           <Logo className="w-[188px] h-[80px] pt-2 md:hidden" />

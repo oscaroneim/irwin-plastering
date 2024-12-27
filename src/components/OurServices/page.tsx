@@ -15,7 +15,7 @@ export default function OurServices() {
           <div className="h-1 md:h-2 bg-orange mx-auto mt-2 w-full"></div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:gap-4 justify-between xl:justify-evenly items-stretch w-auto">
+      <div className="flex flex-col gap-4 md:flex-row md:gap-4 justify-between xl:justify-evenly items-stretch w-auto">
         <div className="mb-8 md:mb-0 flex flex-col w-full md:w-[452px]">
           <h2 className="mb-4 font-semibold text-2xl">
             COMMERCIAL <span className="hidden lg:inline-block">SITES</span>
@@ -68,7 +68,9 @@ export default function OurServices() {
             enhance comfort and aesthetics. Our tailored services deliver
             stylish walls, durable floors, and finishes designed to last.
           </p>
-          <Button type="HOME OWNER">Enquire</Button>
+          <Button type="HOME OWNER" className="mb-10 md:mb-0">
+            Enquire
+          </Button>
         </div>
       </div>
     </section>
