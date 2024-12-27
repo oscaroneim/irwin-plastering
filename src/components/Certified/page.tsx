@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SponsorLogo1 from "../../../public/images/WhyUs/sponser1.svg";
 import SponsorLogo2 from "../../../public/images/WhyUs/sponser2.jpg";
 import SponsorLogo3 from "../../../public/images/WhyUs/sponser3.png";
@@ -6,34 +7,40 @@ import SponsorLogo4 from "../../../public/images/WhyUs/sponser4.png";
 
 export default function Certified() {
   return (
-    <div className="text-center mt-20">
-      <h1 className="text-md md:text-xl mb-4">
+    <div className="text-center mt-14 lg:mt-20">
+      <h1 className=" md:text-xl">
         Approved Installers and Trusted Partners of
       </h1>
-      <div className="grid grid-cols-2 md:flex md:flex-row md:justify-center md:items-center gap-6">
-        <div className="p-4 flex justify-center">
-          <Image
-            src={SponsorLogo4}
-            alt="Gypsol logo"
-            className="w-full h-auto max-w-[200px] object-contain"
-          />
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 px-2 sm:px-4">
+        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
+          <Link href="https://cemfloor.co.uk/">
+            <SponsorLogo1 className="w-full h-full" />
+          </Link>
         </div>
-        <div className="p-4 flex justify-center">
-          <SponsorLogo1 className="w-full h-full" />
+        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
+          <Link href="https://www.longfloor.co.uk/">
+            <Image
+              src={SponsorLogo2}
+              alt="LongFloor screed"
+              width={252}
+              height={145}
+            />
+          </Link>
         </div>
-        <div className="p-4 flex justify-center">
-          <Image
-            src={SponsorLogo2}
-            alt="Longfloor logo"
-            className="w-full h-auto max-w-[200px] object-contain"
-          />
+        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
+          <Link href="https://www.gyvlon.co.uk/en/">
+            <Image
+              src={SponsorLogo3}
+              alt="Gyvlon Screed"
+              width={252}
+              height={145}
+            />
+          </Link>
         </div>
-        <div className="p-4 flex justify-center">
-          <Image
-            src={SponsorLogo3}
-            alt="Gyvlon logo"
-            className="w-full h-auto max-w-[200px] object-contain"
-          />
+        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
+          <Link href="https://www.lkabminerals.com/news/lkab-minerals-acquires-francis-flower-2/">
+            <Image src={SponsorLogo4} alt="Gypsol" width={252} height={145} />
+          </Link>
         </div>
       </div>
     </div>

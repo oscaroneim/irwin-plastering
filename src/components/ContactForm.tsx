@@ -337,7 +337,7 @@ const ContactForm: React.FC = () => {
 
         <Button
           type="submit"
-          className="text-md text-white bg-orange hover:bg-orange hover:bg-opacity-40 w-full h-20 font-bold text-2xl p-2"
+          className="text-md text-white bg-orange hover:bg-orange hover:bg-opacity-40 w-full lg:h-20 md:h-14 h-18 font-bold text-2xl p-2"
         >
           Send
         </Button>

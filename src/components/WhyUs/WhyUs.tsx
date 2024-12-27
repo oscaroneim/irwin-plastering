@@ -1,10 +1,6 @@
 import Image from "next/image";
 import whyUs from "../../../public/images/pour.jpeg";
-import SponsorLogo1 from "../../../public/images/WhyUs/sponser1.svg";
-import SponsorLogo2 from "../../../public/images/WhyUs/sponser2.jpg";
-import sponsorLogo3 from "../../../public/images/WhyUs/sponser3.png";
-import sponsorLogo4 from "../../../public/images/WhyUs/sponser4.png";
-import Link from "next/link";
+import Certified from "../Certified/page";
 
 export default function WhyChooseUs() {
   return (
@@ -55,39 +51,7 @@ export default function WhyChooseUs() {
           />
         </div>
       </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 px-2 sm:px-4">
-        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
-          <Link href="https://cemfloor.co.uk/">
-            <SponsorLogo1 className="w-full h-full" />
-          </Link>
-        </div>
-        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
-          <Link href="https://www.longfloor.co.uk/">
-            <Image
-              src={SponsorLogo2}
-              alt="LongFloor screed"
-              width={252}
-              height={145}
-            />
-          </Link>
-        </div>
-        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
-          <Link href="https://www.gyvlon.co.uk/en/">
-            <Image
-              src={sponsorLogo3}
-              alt="Gyvlon Screed"
-              width={252}
-              height={145}
-            />
-          </Link>
-        </div>
-        <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
-          <Link href="https://www.lkabminerals.com/news/lkab-minerals-acquires-francis-flower-2/">
-            <Image src={sponsorLogo4} alt="Gypsol" width={252} height={145} />
-          </Link>
-        </div>
-      </div>
+      <Certified />
     </section>
   );
 }
