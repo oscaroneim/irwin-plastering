@@ -26,7 +26,7 @@ export default function HeroSection() {
       </div>
 
       <div>
-        <h2 className="text-orange text-2xl font-bold italic text-center drop-shadow-custom md:hidden absolute top-20 w-full left-1/2 transform -translate-x-1/2">
+        <h2 className="text-orange text-3xl font-bold italic text-center drop-shadow-custom md:hidden absolute top-20 w-full left-1/2 transform -translate-x-1/2">
           We&apos;ve got you<span className="block">covered!</span>
         </h2>
         <div className="left-[70px] bottom-12 md:hidden absolute">
