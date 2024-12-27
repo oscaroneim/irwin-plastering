@@ -13,20 +13,20 @@ export default function Expertise() {
           <h2 className="mb-4 font-semibold text-4xl lg:text-5xl text-lightblue">
             At Irwin, we handle all aspects of plastering.
           </h2>
-          <p className="mb-4 text-xl mt-2">
+          <p className="mb-4 md:text-xl mt-2 text-lg">
             We understand that every project comes with its own set of
             challenges, which is why we pride ourselves on delivering tailored
             solutions. From intricate architectural detailing to large-scale
             commercial projects, our skilled team adapts to your requirements,
             ensuring precision at every stage.
           </p>
-          <p className="mb-4 text-xl">
+          <p className="mb-4 md:text-xl text-lg">
             We use cutting-edge techniques and premium materials to enhance
             thermal insulation, acoustic performance, and overall longevity,
             giving you results that stand the test of time.
           </p>
 
-          <ul className="text-xl lg:text-2xl mt-2 grid grid-cols-2 gap-x-4 gap-y-2">
+          <ul className="grid-cols-1 text-xl lg:text-2xl mt-2 grid md:grid-cols-2 gap-x-4 gap-y-2">
             <li className="text-darkblue font-semibold italic">• Plastering</li>
             <li className="text-darkblue font-semibold italic">• K Rend</li>
             <li className="text-darkblue font-semibold italic">

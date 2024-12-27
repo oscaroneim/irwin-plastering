@@ -1,6 +1,6 @@
 "use client";
 
-import Services from "@/components/BuildingTypes/page";
+import OurServices from "@/components/OurServices/page";
 import HeroSection from "@/components/Hero/HeroSection";
 import Expertise from "@/components/Expertise/page";
 import WhyUs from "@/components/WhyUs/WhyUs";
@@ -12,7 +12,7 @@ export default function Home() {
         <HeroSection />
       </section>
       <section id="services">
-        <Services />
+        <OurServices />
       </section>
       <section id="expertise">
         <Expertise />

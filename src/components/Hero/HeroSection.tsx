@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Desktop from "../../../public/images/plasteringBanner1.png";
-import Mobile from "../../../public/images/Slide1Mobile.jpg";
+import Mobile from "../../../public/images/mobileHero.jpeg";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -25,8 +25,8 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div>
-        <h2 className="text-orange text-3xl font-bold italic text-center drop-shadow-custom md:hidden absolute top-20 w-full left-1/2 transform -translate-x-1/2">
+      <div className="md:hidden absolute inset-0 flex flex-col items-center justify-center text-center z-10">
+        <h2 className="text-orange text-3xl font-bold italic text-center drop-shadow-custom md:hidden absolute top-12 w-full left-1/2 transform -translate-x-1/2">
           We&apos;ve got you<span className="block">covered!</span>
         </h2>
         <div className="left-[70px] bottom-12 md:hidden absolute">
@@ -39,12 +39,15 @@ export default function HeroSection() {
       </div>
 
       <div>
-        <div className="block md:hidden">
+        <div className="block md:hidden h-[400px] w-full overflow-hidden">
           <Image
             src={Mobile}
             alt="A man plastering - Mobile"
-            layout="responsive"
+            objectPosition="center 30%"
+            objectFit="cover"
+            layout="fill"
             priority
+            className="h-full rounded-sm"
           />
         </div>
         <div className="hidden md:flex lg:h-[700px] md:h-[500px]">
