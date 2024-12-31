@@ -64,9 +64,10 @@ export default function OurServices() {
             className="mb-4 rounded-sm object-cover w-full"
           />
           <p className="mb-4 flex-grow">
-            For homeowners, we provide high-quality plastering and screeding to
-            enhance comfort and aesthetics. Our tailored services deliver
-            stylish walls, durable floors, and finishes designed to last.
+            For homeowners, we offer top-quality plastering and screeding
+            services at fair prices, enhancing both comfort and aesthetics. Our
+            personalized approach ensures stylish walls, durable floors, and
+            long-lasting finishes tailored to your needs.
           </p>
           <Button type="HOME OWNER" className="mb-10 md:mb-0">
             Enquire

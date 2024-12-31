@@ -26,11 +26,11 @@ export default function WhyChooseUs() {
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               We partner with leading main contractors, independent specialist
-              builders, shopfitters, and self-builders. Using materials from
+              builders, shopfitters, and DIY enthusiasts. Using materials from
               suppliers such as Cemfloor and Gypsol, we deliver screeds and
               renders that offer optimal flatness, thermal performance, and
-              durability, ensuring consistent results across residential and
-              commercial projects.
+              durability, ensuring consistent results across all projects,
+              regardless of scale.
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               By focusing on meticulous planning and innovative techniques, we
