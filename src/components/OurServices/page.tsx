@@ -6,7 +6,7 @@ import Private from "../../../public/images/private.jpg";
 
 export default function OurServices() {
   return (
-    <section className="w-full h-auto mt-12 px-4">
+    <section className="w-full h-auto mt-12">
       <div className="text-center">
         <div className="inline-block relative mb-8">
           <h1 className="mb-2 text-darkblue font-semibold text-4xl lg:text-5xl">

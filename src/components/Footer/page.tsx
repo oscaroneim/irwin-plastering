@@ -20,13 +20,11 @@ export default function Footer() {
     e.preventDefault();
 
     if (pathname === "/") {
-      // Scroll to section on the same page
       const element = document.querySelector(hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Navigate to homepage and include the hash
       router.push(`/${hash}`);
     }
   };
@@ -34,11 +32,11 @@ export default function Footer() {
   return (
     <footer className="w-full h-auto bg-darkblue text-white font-bold mt-8">
       <section className="py-8 md:py-2 relative">
-        <div className="flex md:ml-4 ml-2 mb-4 md:mb-0 relative w-full">
+        <div className="flex md:ml-4 ml-2 mb-4 md:mb-0 relative w-auto">
           <a href="#top" onClick={(e) => handleNavigation(e, "#top")}>
-            <FooterLogo className="w-[188px] h-[80px] md:w-[288px] md:h-[180px] ml-1 mx-auto md:mt-0" />
+            <FooterLogo className="w-[188px] h-[80px] md:w-[288px] md:h-[180px] ml-1 mx-auto md:mt-0 max-w-full" />
           </a>
-          <div className="border-top-custom absolute top-[60px] md:top-[120.5px] mx-auto w-[78%] md:w-[90%] md:left-24"></div>
+          <div className="border-top-custom absolute top-[60px] md:top-[120.5px] mx-auto w-[78%] md:w-[80%] laptop:w-[90%] md:left-24"></div>
         </div>
         <div className="gap-8 flex flex-col md:flex-row md:justify-evenly mx-12">
           <div className="mb-6 lg:mb-0">
@@ -90,7 +88,7 @@ export default function Footer() {
               className="block"
             >
               <div className="flex items-center space-x-2">
-                <Whatsapp />
+                <Whatsapp className="flex-shrink-0" />
                 <div className="flex flex-col">
                   <h2 className="text-lightblue font-bold">Whatsapp</h2>
                   <p>07746882369</p>
@@ -99,7 +97,7 @@ export default function Footer() {
             </a>
             <a href="mailto:irwinplastering@gmail.com" className="block">
               <div className="flex items-center space-x-2">
-                <Email />
+                <Email className="flex-shrink-0" />
                 <div className="flex flex-col">
                   <h2 className="text-lightblue font-bold">Email us</h2>
                   <p>irwinplastering@gmail.com</p>
@@ -111,7 +109,7 @@ export default function Footer() {
               className="block"
             >
               <div className="flex items-center space-x-2">
-                <Insta />
+                <Insta className="flex-shrink-0" />
                 <div className="flex flex-col">
                   <h2 className="text-lightblue font-bold">Instagram</h2>
                   <p>@irwinplastering</p>

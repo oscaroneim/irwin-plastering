@@ -4,8 +4,8 @@ import Certified from "../Certified/page";
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full h-auto mt-20 px-4">
-      <div className="flex flex-col lg:flex-row items-stretch min-h-[400px] px-4 md:px-10">
+    <section className="w-full h-auto mt-20">
+      <div className="flex flex-col lg:flex-row items-stretch min-h-[400px] px-4 md:px-5">
         <div className="flex flex-col justify-center lg:w-[60%]">
           <div className="text-center lg:text-left">
             <div className="inline-block">

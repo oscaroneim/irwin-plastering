@@ -64,6 +64,16 @@ export const FormSchema = z.object({
         "RENDERING",
         "COLOURED SCREED",
         "ONSITE CONSULTATION",
+        "REPAIRS",
+        "RESTORATION",
+        "FIREPROOFING",
+        "ACOUSTIC PLASTERING",
+        "MONOCOUCHE RENDERING",
+        "SAND AND CEMENT RENDERING",
+        "TRADITIONAL LIME RENDERING",
+        "PEBBLE DASHING",
+        "EXTERNAL WALL INSULATION",
+        "PLASTERBOARDING/STUD WALLS",
       ]),
     )
     .min(1, { message: "Select at least one service." }),
@@ -297,6 +307,12 @@ const ContactForm: React.FC = () => {
                     "RESTORATION",
                     "FIREPROOFING",
                     "ACOUSTIC PLASTERING",
+                    "MONOCOUCHE RENDERING",
+                    "SAND AND CEMENT RENDERING",
+                    "TRADITIONAL LIME RENDERING",
+                    "PEBBLE DASHING",
+                    "EXTERNAL WALL INSULATION",
+                    "PLASTERBOARDING/STUD WALLS",
                   ].map((service) => (
                     <label key={service} className="flex items-center mb-2">
                       <input

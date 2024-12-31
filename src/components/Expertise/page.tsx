@@ -3,24 +3,24 @@ import Smooth from "../../../public/images/smooth.jpg";
 import Machines from "../../../public/images/machine.jpg";
 import JobDone from "../../../public/images/screedWall.jpg";
 import Image from "next/image";
-import Map from "../../../public/images/maps.png";
+import Link from "next/link";
 
 export default function Expertise() {
   return (
-    <div className="border-4 border-orange mt-8 rounded-md p-4">
+    <div className="border-4 border-orange mt-8 rounded-sm p-4">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div className="flex flex-col px-4 self-center lg:ml-2">
           <h2 className="mb-4 font-semibold text-4xl lg:text-5xl text-lightblue">
             At Irwin, we handle all aspects of plastering.
           </h2>
-          <p className="mb-4 md:text-xl mt-2 text-lg">
+          <p className="mb-4 md:text-lg mt-2 text-lg">
             We understand that every project comes with its own set of
             challenges, which is why we pride ourselves on delivering tailored
             solutions. From intricate architectural detailing to large-scale
             commercial projects, our skilled team adapts to your requirements,
             ensuring precision at every stage.
           </p>
-          <p className="mb-4 md:text-xl text-lg">
+          <p className="mb-4 md:text-lg text-lg">
             We use cutting-edge techniques and premium materials to enhance
             thermal insulation, acoustic performance, and overall longevity,
             giving you results that stand the test of time.
@@ -48,7 +48,15 @@ export default function Expertise() {
             <li className="text-darkblue font-semibold italic">
               • Acoustic Plastering
             </li>
+            <li className="text-darkblue font-semibold italic">
+              • Pebble Dashing
+            </li>
           </ul>
+          <Link href="/contact">
+            <p className="text-darkblue font-semibold text-xs italic underline my-2">
+              And many other tailored solutions to meet your unique needs
+            </p>
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 gap-2 md:gap-4">

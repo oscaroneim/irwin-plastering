@@ -2,6 +2,7 @@ import React from "react";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Certified from "../../components/Certified/page";
+import Img from "../../../public/images/contactImg.jpg";
 
 const ContactPage: React.FC = () => {
   return (
@@ -23,14 +24,14 @@ const ContactPage: React.FC = () => {
         <div className="flex flex-col md:flex-row-reverse md:mt-10 mt-8">
           <div className="lg:w-full lg:flex lg:justify-evenly hidden">
             <Image
-              src="/images/contactImg.jpg"
+              src={Img}
               alt="Commercial plastering img"
               width={650}
               height={400}
-              className="rounded-sm"
+              className="rounded-sm object-cover"
             />
           </div>
-          <div className="w-full flex justify-center p-0">
+          <div className="w-full flex justify-center">
             <ContactForm />
           </div>
         </div>
