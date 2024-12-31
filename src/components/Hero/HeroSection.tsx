@@ -39,7 +39,7 @@ export default function HeroSection() {
       </div>
 
       <div>
-        <div className="block md:hidden h-[400px] w-full overflow-hidden">
+        <div className="block md:hidden h-[475px] w-full overflow-hidden">
           <Image
             src={Mobile}
             alt="A man plastering - Mobile"

@@ -292,10 +292,10 @@ const ContactForm: React.FC = () => {
           render={() => (
             <FormItem>
               <FormLabel className="text-lg font-bold text-orange">
-                Services
+                <span id="AllServices">Services</span>
               </FormLabel>
               <FormControl>
-                <div className="grid grid-cols-1 md:grid-cols-2 text-darkblue ">
+                <div className="grid grid-cols-1 md:grid-cols-2 text-darkblue">
                   {[
                     "PLASTERING",
                     "LIQUID SCREED",

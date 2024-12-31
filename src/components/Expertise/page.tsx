@@ -4,8 +4,35 @@ import Machines from "../../../public/images/machine.jpg";
 import JobDone from "../../../public/images/screedWall.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Expertise() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleNavigation = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    hash: string,
+  ) => {
+    e.preventDefault();
+
+    if (pathname === "/contact") {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.warn(`Element with hash '${hash}' not found.`);
+      }
+    } else {
+      router.push(`/contact${hash}`);
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
+    }
+  };
   return (
     <div className="border-4 border-orange mt-8 rounded-sm p-4">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -52,7 +79,10 @@ export default function Expertise() {
               • Pebble Dashing
             </li>
           </ul>
-          <Link href="/contact">
+          <Link
+            href="/contact#AllServices"
+            onClick={(e) => handleNavigation(e, "#AllServices")}
+          >
             <p className="text-darkblue font-semibold text-xs italic underline my-2">
               And many other tailored solutions to meet your unique needs
             </p>

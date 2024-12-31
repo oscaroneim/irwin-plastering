@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
       <div className="container mx-auto p-4 mt-3 md:mt-8">
-        <p className="mb-4 text-lightblue font-bold font-montserrat text-2xl md:text-3xl lg:text-4xl text-left lg:w-full md:mx-8">
+        <p className="mb-4 mt-4 md:mt-0 text-lightblue font-bold font-montserrat text-2xl md:text-3xl lg:text-4xl text-left lg:w-full md:mx-8">
           Use this form to get advice from our experts or a quote for one of our
           services.
         </p>
