@@ -5,7 +5,8 @@
   :root {
     --radius: 0.5rem;
   }
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 }
