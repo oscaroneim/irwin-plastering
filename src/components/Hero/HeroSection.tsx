@@ -39,7 +39,10 @@ export default function HeroSection() {
       </div>
 
       <div>
-        <div className="block md:hidden h-[475px] w-full overflow-hidden">
+        <div
+          className="block md:hidden overflow-hidden relative w-full"
+          style={{ height: "475px" }}
+        >
           <Image
             src={Mobile}
             alt="A man plastering - Mobile"
@@ -47,9 +50,10 @@ export default function HeroSection() {
             objectFit="cover"
             layout="fill"
             priority
-            className="h-full rounded-sm"
+            className="rounded-sm"
           />
         </div>
+
         <div className="hidden md:flex lg:h-[700px] md:h-[500px]">
           <Image
             src={Desktop}

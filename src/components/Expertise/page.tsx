@@ -84,7 +84,7 @@ export default function Expertise() {
             onClick={(e) => handleNavigation(e, "#AllServices")}
           >
             <p className="text-darkblue font-semibold text-xs italic underline my-2">
-              And many other tailored solutions to meet your unique needs
+              And many other tailored solutions to meet your needs
             </p>
           </Link>
         </div>
