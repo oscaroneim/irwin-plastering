@@ -4,6 +4,7 @@ import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer/page";
 import { Toaster } from "../components/Ui/toaster";
 import { SelectionProvider } from "@/utils/SelectionContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const fontSans = Montserrat({
@@ -31,6 +32,7 @@ export default function RootLayout({
             <Wrapper>
               <Toaster />
               {children}
+              <SpeedInsights />
             </Wrapper>
           </main>
           <Footer />
