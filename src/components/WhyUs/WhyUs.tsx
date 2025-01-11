@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
         <div className="flex flex-col justify-center lg:w-[60%]">
           <div className="text-center lg:text-left">
             <div className="inline-block">
-              <h1 className="text-darkblue font-semibold text-3xl md:text-5xl mb-2 md:mb-3 lg:mb-4">
+              <h1 className="text-darkblue font-semibold text-3xl md:text-5xl mb-2 md:mb-3 lg:mb-2">
                 WHY CHOOSE US?
               </h1>
               <div className="h-1 md:h-2 bg-orange mx-auto lg:mx-0  md:w-full mb-6"></div>
