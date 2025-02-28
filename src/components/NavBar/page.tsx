@@ -31,7 +31,7 @@ export default function NavBar() {
           rel="noopener noreferrer"
           className="block"
         >
-          <p className="text-orange md:text-xl lg:text-2xl mr-4">07746882369</p>
+          <p className="text-orange md:text-xl lg:text-2xl mr-4">01494211924</p>
         </a>
       </div>
     </nav>

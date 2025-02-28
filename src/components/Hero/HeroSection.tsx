@@ -12,7 +12,7 @@ export default function HeroSection() {
             OXFORDSHIRE &<span className="block">BUCKINGHAMSHIRE</span>
           </h1>
 
-          <h2 className="text-orange text-2xl md:text-4xl lg:text-6xl font-bold italic text-center drop-shadow-custom">
+          <h2 className="text-orange text-2xl md:text-3xl lg:text-4xl xl:text-[55px] font-bold italic text-center drop-shadow-custom">
             We&apos;ve got you<span className="block">covered!</span>
           </h2>
           <div>

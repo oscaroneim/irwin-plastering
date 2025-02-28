@@ -91,7 +91,7 @@ export default function Footer() {
                 <Whatsapp className="flex-shrink-0" />
                 <div className="flex flex-col">
                   <h2 className="text-lightblue font-bold">Whatsapp</h2>
-                  <p>07746882369</p>
+                  <p>01494211924</p>
                 </div>
               </div>
             </a>

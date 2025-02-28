@@ -24,7 +24,7 @@ export default function Success() {
           className="
         text-orange font-bold mt-4 text-xl md:text-3xl"
         >
-          07746882369
+          01494211924
         </p>
       </a>
       <p className="mt-16">
