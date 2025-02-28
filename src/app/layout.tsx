@@ -5,6 +5,7 @@ import Footer from "../components/Footer/page";
 import { Toaster } from "../components/Ui/toaster";
 import { SelectionProvider } from "@/utils/SelectionContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import SEO from "@/utils/Seo";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
             <Wrapper>
               <Toaster />
               {children}
+              <Analytics />
               <SpeedInsights />
             </Wrapper>
           </main>
