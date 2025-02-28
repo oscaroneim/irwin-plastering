@@ -1,13 +1,13 @@
 import Logo from "/public/images/svg/irwin-plastering-logo.svg";
 import Logo2 from "/public/images/svg/logobullet.svg";
 import Link from "next/link";
-import Phone from "/public/images/svg/phone.svg";
+import Phone from "../../../public/images/svg/whatsappNav.svg";
 import HamburgerMenu from "../HamburgerMenu/page";
 import "./page.css";
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center justify-between mb-2 md:mb-8 bg-white top-0 z-50 sticky md:static">
+    <nav className="flex items-center justify-between mb-2 md:mb-2 bg-white top-0 z-50 sticky md:static">
       <div className="w-1/2 h-auto">
         <Link href="/">
           <Logo className="w-[188px] h-[80px] pt-2 md:hidden" />
@@ -23,8 +23,10 @@ export default function NavBar() {
       </div>
       <div className="relative hidden md:block"></div>
       <div className="md:flex md:items-center md:justify-between font-bold md:gap-4 hidden pr-4">
-        <div className="relative hidden md:block"></div>
-        <Phone className="w-7 h-7" />
+        <p className="text-darkblue font-bold md:text-xl lg:text-2xl">
+          Call us
+        </p>
+        <Phone className="w-9 h-9" />
         <a
           href="https://wa.me/447746882369?text=Hi%2C%20I%E2%80%99d%20like%20to%20get%20a%20quote%20for%20your%20services.%20My%20project%20involves%20%5Bbrief%20description%5D.%20Could%20you%20let%20me%20know%20the%20next%20steps%3F%20Thanks%21"
           target="_blank"
