@@ -1,9 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: "https://irwinplastering.com", // Replace with final domain name
-  generateRobotsTxt: true, // Generates robots.txt as well
+  siteUrl: "https://irwinplastering.com",
+  generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,
 };
 
-module.exports = config;
+export default config;
