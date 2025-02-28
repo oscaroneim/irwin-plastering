@@ -23,6 +23,6 @@ export default [
       "@typescript-eslint/no-this-alias": "warn", // Avoid aliasing `this` unnecessarily
     },
   },
-  ...tseslint.configs.flatRecommended, // Use `flatRecommended` for flat config
+  ...tseslint.configs.recommended, // Use `flatRecommended` for flat config
   pluginReact.configs.flat.recommended,
 ];
