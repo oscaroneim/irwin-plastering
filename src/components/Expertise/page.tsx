@@ -1,3 +1,4 @@
+import React from "react";
 import Laser from "../../../public/images/lazer.jpg";
 import Smooth from "../../../public/images/smooth.jpg";
 import Machines from "../../../public/images/machine.jpg";

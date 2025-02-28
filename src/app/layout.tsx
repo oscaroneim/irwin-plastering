@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google";
+import React from "react";
 import NavBar from "../components/NavBar/page";
 import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer/page";

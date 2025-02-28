@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState } from "react";
+import React from "react";
 
 const SelectionContext = createContext<{
   selected: string;

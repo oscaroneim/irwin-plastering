@@ -1,4 +1,6 @@
+import React from "react";
 import Head from "next/head";
+
 type SeoType = {
   title?: string;
   description?: string;

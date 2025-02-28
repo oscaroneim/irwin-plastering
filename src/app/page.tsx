@@ -5,6 +5,7 @@ import HeroSection from "@/components/Hero/HeroSection";
 import Expertise from "@/components/Expertise/page";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import SEO from "@/utils/Seo";
+import React from "react";
 
 export default function Home() {
   return (

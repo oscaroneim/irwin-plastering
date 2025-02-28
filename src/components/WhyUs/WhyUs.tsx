@@ -1,6 +1,7 @@
 import Image from "next/image";
 import whyUs from "../../../public/images/pour.jpeg";
 import Certified from "../Certified/page";
+import React from "react";
 
 export default function WhyChooseUs() {
   return (

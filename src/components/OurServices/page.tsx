@@ -3,6 +3,7 @@ import Button from "../Button/page";
 import Comm from "../../../public/images/office.avif";
 import Home from "../../../public/images/home.jpg";
 import Private from "../../../public/images/private.jpg";
+import React from "react";
 
 export default function OurServices() {
   return (

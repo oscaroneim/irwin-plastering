@@ -2,6 +2,7 @@ import Link from "next/link";
 import Desktop from "../../../public/images/plasteringBanner1.png";
 import Mobile from "../../../public/images/mobileHero.jpeg";
 import Image from "next/image";
+import React from "react";
 
 export default function HeroSection() {
   return (

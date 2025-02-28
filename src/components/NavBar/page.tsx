@@ -3,6 +3,7 @@ import Logo2 from "/public/images/svg/logobullet.svg";
 import Link from "next/link";
 import Phone from "../../../public/images/svg/whatsappNav.svg";
 import HamburgerMenu from "../HamburgerMenu/page";
+import React from "react";
 import "./page.css";
 
 export default function NavBar() {

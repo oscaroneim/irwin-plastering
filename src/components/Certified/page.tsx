@@ -4,6 +4,7 @@ import SponsorLogo1 from "../../../public/images/WhyUs/sponser1.svg";
 import SponsorLogo2 from "../../../public/images/WhyUs/sponser2.jpg";
 import SponsorLogo3 from "../../../public/images/WhyUs/sponser3.png";
 import SponsorLogo4 from "../../../public/images/WhyUs/sponser4.png";
+import React from "react";
 
 export default function Certified() {
   return (
