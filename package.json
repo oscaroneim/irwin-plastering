@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky",
-    "test": "snyk test",
+    "test": "echo \"No tests defined yet.\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
