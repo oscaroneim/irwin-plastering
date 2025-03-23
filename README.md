@@ -46,7 +46,7 @@ Set up an EmailJS account:
 
 Go to emailjs.com and sign up
 
-Connect your email provider (e.g. Gmail, Outlook)
+Connect your email provider (e.g. irwinplastering@gmail)
 
 Create an email template and service
 
