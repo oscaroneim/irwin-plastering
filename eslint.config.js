@@ -14,6 +14,12 @@ export default [
       "@typescript-eslint/no-explicit-any": "off",
       semi: ["error", "always"],
     },
+    "settings": {
+  "react": {
+    "version": "detect"
+  }
+}
+
   },
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
