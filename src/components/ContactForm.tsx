@@ -104,7 +104,11 @@ const ContactForm: React.FC = () => {
     const validTypes: Array<
       "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY"
     > = ["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"];
-    if (validTypes.includes(selected as any)) {
+    if (
+      validTypes.includes(
+        selected as "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY",
+      )
+    ) {
       reset({
         ...form.getValues(),
         typeOfLocation: selected as
@@ -115,7 +119,7 @@ const ContactForm: React.FC = () => {
     }
   }, [selected, reset]);
 
-  const onSubmit = async (data: z.infer<typeof FormSchema>) => {
+  const onSubmit = async () => {
     if (formRef.current) {
       emailjs
         .sendForm(
