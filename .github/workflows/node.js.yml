@@ -79,16 +79,12 @@ jobs:
           fi
         shell: bash
 
-      - name: Authenticate with Snyk
+      - name: Run Snyk Security Test (Non-Blocking)
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        run: |
-          snyk auth $SNYK_TOKEN || (echo "Snyk auth failed, skipping..." && exit 0)
-
-      - name: Run Snyk Security Test (Non-Blocking)
-        run: |
-          snyk test --severity-threshold=high || echo "Snyk test found issues, continuing..."
+        run: snyk test --severity-threshold=high || echo "Snyk test found issues, continuing..."
 
       - name: Monitor Snyk for Continuous Scanning (Non-Blocking)
-        run: |
-          snyk monitor || echo "Snyk monitor failed, continuing..."
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        run: snyk monitor || echo "Snyk monitor failed, continuing..."
