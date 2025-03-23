@@ -28,25 +28,61 @@ A sleek and responsive marketing website for [Irwin Plastering](https://irwinpla
 npm i
 ```
 
+
 ### Run the development server:
 
 ```bash
 npm run dev
 ```
 
-## ✉️ Contact Form Setup
-The form on the Contact page uses EmailJS to send submissions without a backend.
 
-### EmailJS Environment Variables
-Set the following in your .env.local:
+## 📬 How EmailJS Works
+Overview:
+When a user submits the Contact form on the website, their message is sent to your email inbox directly via EmailJS. No backend server is needed.
 
- ```bash
+
+### 🧑‍💻 For Admins: How You’ll Receive Contact Submissions
+Set up an EmailJS account:
+
+Go to emailjs.com and sign up
+
+Connect your email provider (e.g. Gmail, Outlook)
+
+Create an email template and service
+
+In your EmailJS dashboard:
+
+Copy the following:
+
+Service ID
+
+Template ID
+
+Public Key
+
+Add these to the Vercel project:
+```bash
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
+### Whenever a user submits the form:
+
+EmailJS sends their message directly to your chosen email inbox using your configured template.
+
+You’ll get an email with:
+
+Their name
+
+Their email
+
+Their message
+
+No extra action is required by you. Just check your inbox!
+
 You can generate these by signing up at emailjs.com.
+
 
 ## ☁️ Deployment (Vercel)
 This project is deployed to Vercel.
@@ -68,10 +104,12 @@ SNYK_TOKEN (optional for CI)
 
 ✅ Vercel automatically handles CI/CD, preview deployments, and analytics.
 
+
 ## 🔐 Snyk Integration (CI/CD)
 This project integrates Snyk for security testing in GitHub Actions.
 
 Make sure you set a SNYK_TOKEN in your GitHub repo Secrets.
+
 
 ## 📁 Project Structure
 
@@ -87,6 +125,7 @@ Make sure you set a SNYK_TOKEN in your GitHub repo Secrets.
 ├── tsconfig.json
 └── eslint.config.js
 ```
+
 
 ## 👷‍♂️ Maintained by
 Irwin Plastering
