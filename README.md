@@ -1,6 +1,6 @@
 # 🏗️ Irwin Plastering Website
 
-A sleek and responsive marketing website for [Irwin Plastering](https://irwinplastering.com), built with modern web technologies and optimized for SEO, performance, and accessibility.
+Website for [Irwin Plastering](https://irwinplastering.com), built with Next.js
 
 ---
 
