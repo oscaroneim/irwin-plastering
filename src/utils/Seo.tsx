@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 type SeoType = {
   title?: string;
@@ -14,8 +14,8 @@ const SEO: React.FC<SeoType> = ({
   description,
   url,
   image,
-  type = "website",
-  siteName = "Irwin Plastering",
+  type = 'website',
+  siteName = 'Irwin Plastering',
 }) => {
   return (
     <Head>

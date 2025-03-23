@@ -1,25 +1,18 @@
-"use client";
+'use client';
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import React, { useRef, useEffect } from "react";
-import { z } from "zod";
-import emailjs from "@emailjs/browser";
-import { Button } from "./Ui/button";
-import "./custom-checkbox.css";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "./Ui/form";
-import { Input } from "./Ui/input";
-import { useToast } from "./Ui/use-toast";
-import { Textarea } from "./Ui/textarea";
-import { useRouter } from "next/navigation";
-import { useSelection } from "@/utils/SelectionContext";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import React, { useRef, useEffect } from 'react';
+import { z } from 'zod';
+import emailjs from '@emailjs/browser';
+import { Button } from './Ui/button';
+import './custom-checkbox.css';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './Ui/form';
+import { Input } from './Ui/input';
+import { useToast } from './Ui/use-toast';
+import { Textarea } from './Ui/textarea';
+import { useRouter } from 'next/navigation';
+import { useSelection } from '@/utils/SelectionContext';
 
 const ukPostcodeRegex =
   /^(GIR\s?0AA|(?:(?:[A-PR-UWYZ][0-9]{1,2})|(?:[A-PR-UWYZ][A-HK-Y][0-9]{1,2})|(?:[A-PR-UWYZ][0-9][A-HJKPSTUW])|(?:[A-PR-UWYZ][A-HK-Y][0-9][ABEHMNPRV-Y]))\s?\d[ABD-HJLNP-UW-Z]{2})$/i;
@@ -27,56 +20,52 @@ const ukPostcodeRegex =
 // Zod schema for form validation
 export const FormSchema = z.object({
   firstName: z.string().min(2, {
-    message: "First name must be at least 2 characters long.",
+    message: 'First name must be at least 2 characters long.',
   }),
 
   secondName: z.string().min(2, {
-    message: "Second name must be at least 2 characters long.",
+    message: 'Second name must be at least 2 characters long.',
   }),
 
-  phoneNumber: z
-    .string()
-    .regex(/^\d{11}$/, { message: "Phone number must be 10 digits." }),
+  phoneNumber: z.string().regex(/^\d{11}$/, { message: 'Phone number must be 10 digits.' }),
   email: z
     .string()
-    .min(2, { message: "Email must be at least 2 characters." })
+    .min(2, { message: 'Email must be at least 2 characters.' })
     .regex(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, {
-      message: "Email does not match the required pattern.",
+      message: 'Email does not match the required pattern.',
     }),
 
   typeOfLocation: z
-    .enum(["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"])
-    .refine((value) => !!value, { message: "Select one type of location." }),
+    .enum(['HOME OWNER', 'PRIVATE HOUSE', 'COMMERCIAL PROPERTY'])
+    .refine((value) => !!value, { message: 'Select one type of location.' }),
 
   postcode: z.string().regex(ukPostcodeRegex, {
-    message: "Invalid Uk postcode.",
+    message: 'Invalid Uk postcode.',
   }),
 
-  message: z
-    .string()
-    .min(10, { message: "Message should be at least 10 characters." }),
+  message: z.string().min(10, { message: 'Message should be at least 10 characters.' }),
   services: z
     .array(
       z.enum([
-        "PLASTERING",
-        "LIQUID SCREED",
-        "K RENDERING",
-        "RENDERING",
-        "COLOURED SCREED",
-        "ONSITE CONSULTATION",
-        "REPAIRS",
-        "RESTORATION",
-        "FIREPROOFING",
-        "ACOUSTIC PLASTERING",
-        "MONOCOUCHE RENDERING",
-        "SAND AND CEMENT RENDERING",
-        "TRADITIONAL LIME RENDERING",
-        "PEBBLE DASHING",
-        "EXTERNAL WALL INSULATION",
-        "PLASTERBOARDING/STUD WALLS",
-      ]),
+        'PLASTERING',
+        'LIQUID SCREED',
+        'K RENDERING',
+        'RENDERING',
+        'COLOURED SCREED',
+        'ONSITE CONSULTATION',
+        'REPAIRS',
+        'RESTORATION',
+        'FIREPROOFING',
+        'ACOUSTIC PLASTERING',
+        'MONOCOUCHE RENDERING',
+        'SAND AND CEMENT RENDERING',
+        'TRADITIONAL LIME RENDERING',
+        'PEBBLE DASHING',
+        'EXTERNAL WALL INSULATION',
+        'PLASTERBOARDING/STUD WALLS',
+      ])
     )
-    .min(1, { message: "Select at least one service." }),
+    .min(1, { message: 'Select at least one service.' }),
 });
 
 const ContactForm: React.FC = () => {
@@ -88,33 +77,28 @@ const ContactForm: React.FC = () => {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      firstName: "",
-      secondName: "",
-      phoneNumber: "",
-      email: "",
-      typeOfLocation: "HOME OWNER", // Default value
-      postcode: "",
-      message: "",
+      firstName: '',
+      secondName: '',
+      phoneNumber: '',
+      email: '',
+      typeOfLocation: 'HOME OWNER', // Default value
+      postcode: '',
+      message: '',
       services: [],
     },
   });
 
   const { reset } = form;
   useEffect(() => {
-    const validTypes: Array<
-      "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY"
-    > = ["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"];
-    if (
-      validTypes.includes(
-        selected as "HOME OWNER" | "PRIVATE HOUSE" | "COMMERCIAL PROPERTY",
-      )
-    ) {
+    const validTypes: Array<'HOME OWNER' | 'PRIVATE HOUSE' | 'COMMERCIAL PROPERTY'> = [
+      'HOME OWNER',
+      'PRIVATE HOUSE',
+      'COMMERCIAL PROPERTY',
+    ];
+    if (validTypes.includes(selected as 'HOME OWNER' | 'PRIVATE HOUSE' | 'COMMERCIAL PROPERTY')) {
       reset({
         ...form.getValues(),
-        typeOfLocation: selected as
-          | "HOME OWNER"
-          | "PRIVATE HOUSE"
-          | "COMMERCIAL PROPERTY",
+        typeOfLocation: selected as 'HOME OWNER' | 'PRIVATE HOUSE' | 'COMMERCIAL PROPERTY',
       });
     }
   }, [selected, reset]);
@@ -128,24 +112,24 @@ const ContactForm: React.FC = () => {
           formRef.current,
           {
             publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
-          },
+          }
         )
         .then(
           () => {
-            console.info("SUCCESS");
+            console.info('SUCCESS');
             form.reset();
             if (router) {
-              router.push("/success");
+              router.push('/success');
             }
           },
           (error) => {
             toast({
-              variant: "destructive",
-              title: "Email failed to send.",
+              variant: 'destructive',
+              title: 'Email failed to send.',
               description: `Please contact us direct if this continues.`,
             });
-            console.warn("FAILED...", JSON.stringify(error));
-          },
+            console.warn('FAILED...', JSON.stringify(error));
+          }
         );
     }
   };
@@ -162,9 +146,7 @@ const ContactForm: React.FC = () => {
           name="firstName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                First Name
-              </FormLabel>
+              <FormLabel className="text-lg font-bold text-orange">First Name</FormLabel>
               <FormControl>
                 <Input
                   className="border-slate-400 border-2 bg-white"
@@ -182,9 +164,7 @@ const ContactForm: React.FC = () => {
           name="secondName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                Second Name
-              </FormLabel>
+              <FormLabel className="text-lg font-bold text-orange">Second Name</FormLabel>
               <FormControl>
                 <Input
                   className="border-slate-400 border-2 bg-white"
@@ -202,9 +182,7 @@ const ContactForm: React.FC = () => {
           name="phoneNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                Phone Number
-              </FormLabel>
+              <FormLabel className="text-lg font-bold text-orange">Phone Number</FormLabel>
               <FormControl>
                 <Input
                   className="border-slate-400 border-2 bg-white"
@@ -222,9 +200,7 @@ const ContactForm: React.FC = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                Email
-              </FormLabel>
+              <FormLabel className="text-lg font-bold text-orange">Email</FormLabel>
               <FormControl>
                 <Input
                   className="border-slate-400 bg-white border-2"
@@ -242,27 +218,20 @@ const ContactForm: React.FC = () => {
             name="typeOfLocation"
             render={() => (
               <FormItem>
-                <FormLabel className="text-lg font-bold text-orange">
-                  Type of Property
-                </FormLabel>
+                <FormLabel className="text-lg font-bold text-orange">Type of Property</FormLabel>
                 <FormControl>
                   <div className="flex flex-col gap-2 text-darkblue">
-                    {["HOME OWNER", "PRIVATE HOUSE", "COMMERCIAL PROPERTY"].map(
-                      (service) => (
-                        <label
-                          key={service}
-                          className="flex items-center space-x-2"
-                        >
-                          <input
-                            type="radio"
-                            className="custom-radio mr-2"
-                            value={service}
-                            {...form.register("typeOfLocation")}
-                          />
-                          <span>{service}</span>
-                        </label>
-                      ),
-                    )}
+                    {['HOME OWNER', 'PRIVATE HOUSE', 'COMMERCIAL PROPERTY'].map((service) => (
+                      <label key={service} className="flex items-center space-x-2">
+                        <input
+                          type="radio"
+                          className="custom-radio mr-2"
+                          value={service}
+                          {...form.register('typeOfLocation')}
+                        />
+                        <span>{service}</span>
+                      </label>
+                    ))}
                   </div>
                 </FormControl>
                 <FormMessage className="text-xs text-red-600" />
@@ -275,9 +244,7 @@ const ContactForm: React.FC = () => {
             name="postcode"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-lg font-bold text-orange">
-                  Postcode
-                </FormLabel>
+                <FormLabel className="text-lg font-bold text-orange">Postcode</FormLabel>
                 <FormControl>
                   <Input
                     className="border-slate-400 bg-white border-2"
@@ -301,29 +268,29 @@ const ContactForm: React.FC = () => {
               <FormControl>
                 <div className="grid grid-cols-1 md:grid-cols-2 text-darkblue">
                   {[
-                    "PLASTERING",
-                    "LIQUID SCREED",
-                    "K RENDERING",
-                    "RENDERING",
-                    "COLOURED SCREED",
-                    "ONSITE CONSULTATION",
-                    "REPAIRS",
-                    "RESTORATION",
-                    "FIREPROOFING",
-                    "ACOUSTIC PLASTERING",
-                    "MONOCOUCHE RENDERING",
-                    "SAND AND CEMENT RENDERING",
-                    "TRADITIONAL LIME RENDERING",
-                    "PEBBLE DASHING",
-                    "EXTERNAL WALL INSULATION",
-                    "PLASTERBOARDING/STUD WALLS",
+                    'PLASTERING',
+                    'LIQUID SCREED',
+                    'K RENDERING',
+                    'RENDERING',
+                    'COLOURED SCREED',
+                    'ONSITE CONSULTATION',
+                    'REPAIRS',
+                    'RESTORATION',
+                    'FIREPROOFING',
+                    'ACOUSTIC PLASTERING',
+                    'MONOCOUCHE RENDERING',
+                    'SAND AND CEMENT RENDERING',
+                    'TRADITIONAL LIME RENDERING',
+                    'PEBBLE DASHING',
+                    'EXTERNAL WALL INSULATION',
+                    'PLASTERBOARDING/STUD WALLS',
                   ].map((service) => (
                     <label key={service} className="flex items-center mb-2">
                       <input
                         type="checkbox"
                         className="custom-checkbox mr-2"
                         value={service}
-                        {...form.register("services")}
+                        {...form.register('services')}
                       />
                       <span>{service}</span>
                     </label>
@@ -340,9 +307,7 @@ const ContactForm: React.FC = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg font-bold text-orange">
-                Message
-              </FormLabel>
+              <FormLabel className="text-lg font-bold text-orange">Message</FormLabel>
               <FormControl>
                 <Textarea
                   className="border-slate-400 border-2 bg-white h-32"

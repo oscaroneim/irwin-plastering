@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
-import React from "react";
+import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import React from 'react';
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -15,11 +15,7 @@ const HamburgerMenu = () => {
 
   return (
     <div className="md:hidden">
-      <button
-        className="p-2 focus:outline-none"
-        onClick={toggleMenu}
-        aria-label="Toggle Menu"
-      >
+      <button className="p-2 focus:outline-none" onClick={toggleMenu} aria-label="Toggle Menu">
         <div className="space-y-1">
           <span className="block w-6 h-0.5 bg-black"></span>
           <span className="block w-6 h-0.5 bg-black"></span>
@@ -49,12 +45,8 @@ const HamburgerMenu = () => {
           <div className="flex-1 flex mt-10 justify-center">
             <ul className="space-y-6 text-xl text-white text-center">
               <li>
-                {pathname === "/" ? (
-                  <a
-                    href="#top"
-                    onClick={handleClose}
-                    className="hover:text-blue-600"
-                  >
+                {pathname === '/' ? (
+                  <a href="#top" onClick={handleClose} className="hover:text-blue-600">
                     Home
                   </a>
                 ) : (
@@ -64,12 +56,8 @@ const HamburgerMenu = () => {
                 )}
               </li>
               <li>
-                {pathname === "/" ? (
-                  <a
-                    href="#services"
-                    onClick={handleClose}
-                    className="hover:text-blue-600"
-                  >
+                {pathname === '/' ? (
+                  <a href="#services" onClick={handleClose} className="hover:text-blue-600">
                     Services
                   </a>
                 ) : (
@@ -79,12 +67,8 @@ const HamburgerMenu = () => {
                 )}
               </li>
               <li>
-                {pathname === "/" ? (
-                  <a
-                    href="#expertise"
-                    onClick={handleClose}
-                    className="hover:text-blue-600"
-                  >
+                {pathname === '/' ? (
+                  <a href="#expertise" onClick={handleClose} className="hover:text-blue-600">
                     Expertise
                   </a>
                 ) : (
@@ -94,12 +78,8 @@ const HamburgerMenu = () => {
                 )}
               </li>
               <li>
-                {pathname === "/" ? (
-                  <a
-                    href="#whyUs"
-                    onClick={handleClose}
-                    className="hover:text-blue-600"
-                  >
+                {pathname === '/' ? (
+                  <a href="#whyUs" onClick={handleClose} className="hover:text-blue-600">
                     About Us
                   </a>
                 ) : (
@@ -109,11 +89,7 @@ const HamburgerMenu = () => {
                 )}
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  onClick={handleClose}
-                  className="hover:text-blue-600"
-                >
+                <Link href="/contact" onClick={handleClose} className="hover:text-blue-600">
                   Get a Quote
                 </Link>
               </li>

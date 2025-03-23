@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React, { ReactNode, FC } from "react";
-import clsx from "clsx";
+import React, { ReactNode, FC } from 'react';
+import clsx from 'clsx';
 
 interface WrapperProps {
   children: ReactNode;
@@ -9,7 +9,7 @@ interface WrapperProps {
 }
 
 const Wrapper: FC<WrapperProps> = ({ children, className }) => {
-  return <div className={clsx("flex-1 mx-[18px]", className)}>{children}</div>;
+  return <div className={clsx('flex-1 mx-[18px]', className)}>{children}</div>;
 };
 
 export default Wrapper;

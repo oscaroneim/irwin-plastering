@@ -1,22 +1,18 @@
-"use client";
+'use client';
 
-import { createContext, useContext, useState } from "react";
-import React from "react";
+import { createContext, useContext, useState } from 'react';
+import React from 'react';
 
 const SelectionContext = createContext<{
   selected: string;
   setSelected: (value: string) => void;
 }>({
-  selected: "",
+  selected: '',
   setSelected: () => {},
 });
 
-export const SelectionProvider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
-  const [selected, setSelected] = useState("");
+export const SelectionProvider = ({ children }: { children: React.ReactNode }) => {
+  const [selected, setSelected] = useState('');
 
   return (
     <SelectionContext.Provider value={{ selected, setSelected }}>

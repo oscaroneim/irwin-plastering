@@ -1,8 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: "https://irwinplastering.com",
+  siteUrl: 'https://irwinplastering.com',
   generateRobotsTxt: true,
-  changefreq: "weekly",
+  changefreq: 'weekly',
   priority: 0.7,
 };
 

@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import OurServices from "@/components/OurServices/page";
-import HeroSection from "@/components/Hero/HeroSection";
-import Expertise from "@/components/Expertise/page";
-import WhyUs from "@/components/WhyUs/WhyUs";
-import SEO from "@/utils/Seo";
-import React from "react";
+import OurServices from '@/components/OurServices/page';
+import HeroSection from '@/components/Hero/HeroSection';
+import Expertise from '@/components/Expertise/page';
+import WhyUs from '@/components/WhyUs/WhyUs';
+import SEO from '@/utils/Seo';
+import React from 'react';
 
 export default function Home() {
   return (

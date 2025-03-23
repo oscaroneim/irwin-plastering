@@ -1,7 +1,7 @@
-import Image from "next/image";
-import whyUs from "../../../public/images/pour.jpeg";
-import Certified from "../Certified/page";
-import React from "react";
+import Image from 'next/image';
+import whyUs from '../../../public/images/pour.jpeg';
+import Certified from '../Certified/page';
+import React from 'react';
 
 export default function WhyChooseUs() {
   return (
@@ -19,25 +19,22 @@ export default function WhyChooseUs() {
 
           <div className="space-y-6">
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              With extensive experience in floor screeding and spray rendering,
-              we excel in complex and demanding site environments. Our
-              collaborative approach, combined with the industry’s best tools
-              and trusted materials, ensures the successful completion of your
+              With extensive experience in floor screeding and spray rendering, we excel in complex
+              and demanding site environments. Our collaborative approach, combined with the
+              industry’s best tools and trusted materials, ensures the successful completion of your
               projects on time and to the highest standard.
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              We partner with leading main contractors, independent specialist
-              builders, shopfitters, and DIY enthusiasts. Using materials from
-              suppliers such as Cemfloor and Gypsol, we deliver screeds and
-              renders that offer optimal flatness, thermal performance, and
-              durability, ensuring consistent results across all projects,
+              We partner with leading main contractors, independent specialist builders,
+              shopfitters, and DIY enthusiasts. Using materials from suppliers such as Cemfloor and
+              Gypsol, we deliver screeds and renders that offer optimal flatness, thermal
+              performance, and durability, ensuring consistent results across all projects,
               regardless of scale.
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              By focusing on meticulous planning and innovative techniques, we
-              guarantee finishes that exceed expectations. Whether it’s screeds
-              for underfloor heating or seamless spray renders, our team is
-              dedicated to precision, quality, and lasting results.
+              By focusing on meticulous planning and innovative techniques, we guarantee finishes
+              that exceed expectations. Whether it’s screeds for underfloor heating or seamless
+              spray renders, our team is dedicated to precision, quality, and lasting results.
             </p>
           </div>
         </div>

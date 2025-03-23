@@ -1,28 +1,25 @@
-"use client";
+'use client';
 
-import React from "react";
-import FooterLogo from "/public/images/svg/footerlogo.svg";
-import Email from "/public/images/svg/🦆 icon _email_.svg";
-import Whatsapp from "/public/images/svg/🦆 icon _whatsapp_.svg";
-import Insta from "/public/images/svg/🦆 icon _instagram_.svg";
-import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
-import "./page.css";
+import React from 'react';
+import FooterLogo from '/public/images/svg/footerlogo.svg';
+import Email from '/public/images/svg/🦆 icon _email_.svg';
+import Whatsapp from '/public/images/svg/🦆 icon _whatsapp_.svg';
+import Insta from '/public/images/svg/🦆 icon _instagram_.svg';
+import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
+import './page.css';
 
 export default function Footer() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleNavigation = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    hash: string,
-  ) => {
+  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
     e.preventDefault();
 
-    if (pathname === "/") {
+    if (pathname === '/') {
       const element = document.querySelector(hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
       router.push(`/${hash}`);
@@ -33,7 +30,7 @@ export default function Footer() {
     <footer className="w-full h-auto bg-darkblue text-white font-bold mt-8">
       <section className="py-8 md:py-2 relative">
         <div className="flex md:ml-4 ml-2 mb-4 md:mb-0 relative w-auto">
-          <a href="#top" onClick={(e) => handleNavigation(e, "#top")}>
+          <a href="#top" onClick={(e) => handleNavigation(e, '#top')}>
             <FooterLogo className="w-[188px] h-[80px] md:w-[288px] md:h-[180px] ml-1 mx-auto md:mt-0 max-w-full" />
           </a>
           <div className="border-top-custom absolute top-[60px] md:top-[120.5px] mx-auto w-[78%] md:w-[80%] laptop:w-[90%] md:left-24"></div>
@@ -43,23 +40,17 @@ export default function Footer() {
             <h3 className="text-lightblue font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#services"
-                  onClick={(e) => handleNavigation(e, "#services")}
-                >
+                <a href="#services" onClick={(e) => handleNavigation(e, '#services')}>
                   Services
                 </a>
               </li>
               <li>
-                <a
-                  href="#expertise"
-                  onClick={(e) => handleNavigation(e, "#expertise")}
-                >
+                <a href="#expertise" onClick={(e) => handleNavigation(e, '#expertise')}>
                   Expertise
                 </a>
               </li>
               <li>
-                <a href="#whyUs" onClick={(e) => handleNavigation(e, "#whyUs")}>
+                <a href="#whyUs" onClick={(e) => handleNavigation(e, '#whyUs')}>
                   Why Us
                 </a>
               </li>

@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Desktop from "../../../public/images/plasteringBanner1.png";
-import Mobile from "../../../public/images/mobileHero.jpeg";
-import Image from "next/image";
-import React from "react";
+import Link from 'next/link';
+import Desktop from '../../../public/images/plasteringBanner1.png';
+import Mobile from '../../../public/images/mobileHero.jpeg';
+import Image from 'next/image';
+import React from 'react';
 
 export default function HeroSection() {
   return (
@@ -42,7 +42,7 @@ export default function HeroSection() {
       <div>
         <div
           className="block md:hidden overflow-hidden relative w-full"
-          style={{ height: "475px" }}
+          style={{ height: '475px' }}
         >
           <Image
             src={Mobile}

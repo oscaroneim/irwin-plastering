@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Toast,
@@ -7,9 +7,9 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from "@/components/Ui/toast";
-import { useToast } from "@/components/Ui/use-toast";
-import React from "react";
+} from '@/components/Ui/toast';
+import { useToast } from '@/components/Ui/use-toast';
+import React from 'react';
 
 export function Toaster() {
   const { toasts } = useToast();
@@ -21,9 +21,7 @@ export function Toaster() {
           <Toast key={id} {...props}>
             <div className="grid gap-1">
               {title && <ToastTitle>{title}</ToastTitle>}
-              {description && (
-                <ToastDescription>{description}</ToastDescription>
-              )}
+              {description && <ToastDescription>{description}</ToastDescription>}
             </div>
             {action}
             <ToastClose />
