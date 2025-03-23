@@ -1,4 +1,4 @@
-name: Lint, Format, Test & Secure
+name: Lint, Format, Type Check, Test & Secure
 
 on:
   push:
@@ -19,26 +19,37 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # ✅ Define Node.js version (adjust as needed)
+          node-version: 20
           cache: "npm"
 
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run Prettier (Auto-Fix)
-        run: npm run format # ✅ Uses your package.json script
+      - name: Lint with ESLint
+        run: npm run lint
 
-      - name: Check Formatting with Prettier
-        run: npm run lint # ✅ Uses your package.json script
+      - name: Check Prettier Formatting
+        run: npm run format:check
+
+      - name: Type Check
+        run: npm run tsc
 
       - name: Build Project
         run: npm run build
 
       - name: Generate Sitemap (Post-build)
-        run: npm run postbuild # ✅ Runs next-sitemap after build
+        run: npm run postbuild
 
       - name: Run Tests
         run: npm test
+
+      - name: Cache Next.js Build (optional)
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-
 
   snyk-security:
     runs-on: ubuntu-latest
@@ -51,7 +62,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # ✅ Ensure consistency with build
+          node-version: 20
           cache: "npm"
 
       - name: Install Dependencies
