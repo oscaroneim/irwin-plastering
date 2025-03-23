@@ -32,6 +32,7 @@ const HamburgerMenu = () => {
               width={250}
               height={200}
               priority
+              layout="intrinsic"
             />
           </div>
           <button

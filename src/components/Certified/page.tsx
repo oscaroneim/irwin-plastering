@@ -18,17 +18,29 @@ export default function Certified() {
         </div>
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://www.longfloor.co.uk/">
-            <Image src={SponsorLogo2} alt="LongFloor screed" width={252} height={145} />
+            <Image
+              src={SponsorLogo2}
+              alt="LongFloor screed"
+              width={252}
+              height={145}
+              layout="intrinsic"
+            />
           </Link>
         </div>
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://www.gyvlon.co.uk/en/">
-            <Image src={SponsorLogo3} alt="Gyvlon Screed" width={252} height={145} />
+            <Image
+              src={SponsorLogo3}
+              alt="Gyvlon Screed"
+              width={252}
+              height={145}
+              layout="intrinsic"
+            />
           </Link>
         </div>
         <div className="w-full h-24 sm:h-36 rounded-md flex items-center justify-center">
           <Link href="https://www.lkabminerals.com/news/lkab-minerals-acquires-francis-flower-2/">
-            <Image src={SponsorLogo4} alt="Gypsol" width={252} height={145} />
+            <Image src={SponsorLogo4} alt="Gypsol" width={252} height={145} layout="intrinsic" />
           </Link>
         </div>
       </div>

@@ -26,6 +26,7 @@ const ContactPage: React.FC = () => {
               width={650}
               height={400}
               className="rounded-sm object-cover"
+              layout="intrinsic"
             />
           </div>
           <div className="w-full flex justify-center">
