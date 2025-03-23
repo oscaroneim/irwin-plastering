@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://irwinplastering.com
+
+# Sitemaps
+Sitemap: https://irwinplastering.com/sitemap.xml
